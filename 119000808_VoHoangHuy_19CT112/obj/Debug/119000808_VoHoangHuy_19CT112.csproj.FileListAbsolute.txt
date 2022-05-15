@@ -1,0 +1,14 @@
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\119000808_VoHoangHuy_19CT112.exe.config
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\119000808_VoHoangHuy_19CT112.exe
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\119000808_VoHoangHuy_19CT112.pdb
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.csproj.AssemblyReference.cache
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.csproj.SuggestedBindingRedirects.cache
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.TrangChinh.resources
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.Properties.Resources.resources
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.csproj.GenerateResource.cache
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.csproj.CoreCompileInputs.cache
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.csproj.CopyComplete
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.exe
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.pdb
+C:\Users\huydz\OneDrive\Máy tính\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.KhachHang.resources
