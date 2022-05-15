@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataView_KH = new System.Windows.Forms.DataGridView();
             this.txt_sldamua = new System.Windows.Forms.TextBox();
             this.txt_diachi = new System.Windows.Forms.TextBox();
             this.txt_sdt = new System.Windows.Forms.TextBox();
@@ -39,33 +38,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.btn_delete = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataView_KH)).BeginInit();
+            this.data_KhachHang = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_KhachHang)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataView_KH
-            // 
-            this.dataView_KH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataView_KH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView_KH.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataView_KH.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataView_KH.Location = new System.Drawing.Point(0, 128);
-            this.dataView_KH.Margin = new System.Windows.Forms.Padding(2);
-            this.dataView_KH.Name = "dataView_KH";
-            this.dataView_KH.RowHeadersWidth = 51;
-            this.dataView_KH.RowTemplate.Height = 24;
-            this.dataView_KH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
-            this.dataView_KH.Size = new System.Drawing.Size(990, 416);
-            this.dataView_KH.TabIndex = 24;
             // 
             // txt_sldamua
             // 
             this.txt_sldamua.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sldamua.Location = new System.Drawing.Point(876, 39);
+            this.txt_sldamua.Location = new System.Drawing.Point(887, 36);
             this.txt_sldamua.Margin = new System.Windows.Forms.Padding(2);
             this.txt_sldamua.Name = "txt_sldamua";
             this.txt_sldamua.Size = new System.Drawing.Size(69, 32);
@@ -136,7 +124,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(43, 85);
+            this.label3.Location = new System.Drawing.Point(28, 85);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 24);
@@ -160,60 +148,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(43, 38);
+            this.label1.Location = new System.Drawing.Point(28, 38);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(196, 24);
             this.label1.TabIndex = 14;
             this.label1.Text = "Mã Số Khách Hàng ";
             // 
-            // btn_delete
-            // 
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.ForeColor = System.Drawing.Color.Red;
-            this.btn_delete.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.bitten_apple_50px;
-            this.btn_delete.Location = new System.Drawing.Point(406, 157);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(149, 60);
-            this.btn_delete.TabIndex = 27;
-            this.btn_delete.Text = "Xóa";
-            this.btn_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_delete.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.check;
-            this.button1.Location = new System.Drawing.Point(237, 157);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 60);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Cập Nhật";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btn_them
-            // 
-            this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_them.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.cap_nhat;
-            this.btn_them.Location = new System.Drawing.Point(50, 157);
-            this.btn_them.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(158, 60);
-            this.btn_them.TabIndex = 25;
-            this.btn_them.Text = "Thêm ";
-            this.btn_them.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_them.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_clear);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txt_timkiem);
             this.panel1.Controls.Add(this.txt_mskh);
             this.panel1.Controls.Add(this.btn_delete);
             this.panel1.Controls.Add(this.label1);
@@ -230,25 +176,128 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(990, 260);
+            this.panel1.Size = new System.Drawing.Size(990, 234);
             this.panel1.TabIndex = 28;
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
+            this.btn_clear.Location = new System.Drawing.Point(566, 157);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(149, 60);
+            this.btn_clear.TabIndex = 30;
+            this.btn_clear.Text = "Làm Sạch";
+            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label6.Location = new System.Drawing.Point(758, 175);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 24);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Tìm Kiếm";
+            // 
+            // txt_timkiem
+            // 
+            this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_timkiem.Location = new System.Drawing.Point(860, 169);
+            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(105, 32);
+            this.txt_timkiem.TabIndex = 28;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.Color.Red;
+            this.btn_delete.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.bitten_apple_50px;
+            this.btn_delete.Location = new System.Drawing.Point(401, 157);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(149, 60);
+            this.btn_delete.TabIndex = 27;
+            this.btn_delete.Text = "Xóa";
+            this.btn_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.check;
+            this.button1.Location = new System.Drawing.Point(232, 157);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(154, 60);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Cập Nhật";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_them
+            // 
+            this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_them.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.cap_nhat;
+            this.btn_them.Location = new System.Drawing.Point(45, 157);
+            this.btn_them.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(158, 60);
+            this.btn_them.TabIndex = 25;
+            this.btn_them.Text = "Thêm ";
+            this.btn_them.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // data_KhachHang
+            // 
+            this.data_KhachHang.AllowUserToAddRows = false;
+            this.data_KhachHang.AllowUserToDeleteRows = false;
+            this.data_KhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.data_KhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.data_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_KhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.data_KhachHang.GridColor = System.Drawing.Color.White;
+            this.data_KhachHang.Location = new System.Drawing.Point(0, 234);
+            this.data_KhachHang.Name = "data_KhachHang";
+            this.data_KhachHang.ReadOnly = true;
+            this.data_KhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_KhachHang.Size = new System.Drawing.Size(990, 396);
+            this.data_KhachHang.TabIndex = 29;
+            this.data_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_KhachHang_CellClick);
             // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(990, 544);
+            this.ClientSize = new System.Drawing.Size(990, 630);
+            this.Controls.Add(this.data_KhachHang);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataView_KH);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KhachHang";
             this.Text = "KhachHang";
             this.Load += new System.EventHandler(this.KhachHang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataView_KH)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_KhachHang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -258,7 +307,6 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_them;
-        private System.Windows.Forms.DataGridView dataView_KH;
         private System.Windows.Forms.TextBox txt_sldamua;
         private System.Windows.Forms.TextBox txt_diachi;
         private System.Windows.Forms.TextBox txt_sdt;
@@ -270,5 +318,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txt_timkiem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView data_KhachHang;
+        private System.Windows.Forms.Button btn_clear;
     }
 }

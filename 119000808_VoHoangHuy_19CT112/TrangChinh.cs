@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -54,24 +55,32 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void btn_KH_Click(object sender, EventArgs e)
         {
-            this.trangThai = true;
-            this.tentabmo = "Quản lý Sinh Viên";
-            if (!Kiemtramotab(tentabmo))
+            try
             {
-                TabItem t = tab_main.CreateTab(tentabmo);
-                t.Name = "Frm_QuanLySV";
-
-                KhachHang frm_QuanLySV = new KhachHang()
+                this.trangThai = true;
+                this.tentabmo = "Quản lý Khách Hàng";
+                if (!Kiemtramotab(tentabmo))
                 {
-                    DongTap = new KhachHang._dongTap(DongTab),
-                    frm = this,
-                    TopLevel = false,
-                    Dock = DockStyle.Fill,
-                };
-                t.AttachedControl.Controls.Add(frm_QuanLySV);
-                frm_QuanLySV.Show();
-                tab_main.SelectedTabIndex = tab_main.Tabs.Count - 1;
+                    TabItem t = tab_main.CreateTab(tentabmo);
+                    t.Name = "KhachHang";
+
+                    KhachHang khachhang = new KhachHang()
+                    {
+                        DongTap = new KhachHang._dongTap(DongTab),
+                        frm = this,
+                        TopLevel = false,
+                        Dock = DockStyle.Fill,
+                    };
+                    t.AttachedControl.Controls.Add(khachhang);
+                    khachhang.Show();
+                    tab_main.SelectedTabIndex = tab_main.Tabs.Count - 1;
+                }
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show("Lỗi Khi Mở Tab khách Hàng !");
             }
         }
+
     }
 }
