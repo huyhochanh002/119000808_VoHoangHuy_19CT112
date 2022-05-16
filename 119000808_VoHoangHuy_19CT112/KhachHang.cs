@@ -72,7 +72,6 @@ namespace _119000808_VoHoangHuy_19CT112
         }
         public void clear()
         {
-            txt_mskh.Enabled = true;
             txt_mskh.Text = "";
             txt_tenkh.Text = "";
             txt_sdt.Text = "";
@@ -85,7 +84,6 @@ namespace _119000808_VoHoangHuy_19CT112
             {
                 if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
                 {
-                    txt_mskh.Enabled = false;
                     txt_mskh.Text = Convert.ToString(data_KhachHang.CurrentRow.Cells["MSKH"].Value);
                     txt_tenkh.Text = Convert.ToString(data_KhachHang.CurrentRow.Cells["TENKH"].Value);
                     txt_sdt.Text = Convert.ToString(data_KhachHang.CurrentRow.Cells["SDT"].Value);
@@ -107,10 +105,9 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             try {
                 Runnow();
-                string s = "insert into KhachHang(MSKH,TENKH,SDT,DIACHI,SLDAMUA) values " +
-                    "(@MSKH,@TENKH,@SDT,@DIACHI,@SLDAMUA)";
+                string s = "insert into KhachHang(TENKH,SDT,DIACHI,SLDAMUA) values " +
+                    "(@TENKH,@SDT,@DIACHI,@SLDAMUA)";
                 SqlCommand cmd = new SqlCommand(s,cnn);
-                cmd.Parameters.Add("@MSKH", SqlDbType.Int).Value = int.Parse(txt_mskh.Text);
                 cmd.Parameters.Add("@TENKH", SqlDbType.NVarChar).Value = txt_tenkh.Text;
                 cmd.Parameters.Add("@SDT", SqlDbType.Int).Value = int.Parse(txt_sdt.Text);
                 cmd.Parameters.Add("@DIACHI", SqlDbType.NVarChar).Value = txt_diachi.Text;

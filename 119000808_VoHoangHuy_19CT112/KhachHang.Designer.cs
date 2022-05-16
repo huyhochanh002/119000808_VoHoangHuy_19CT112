@@ -88,6 +88,7 @@
             // 
             // txt_mskh
             // 
+            this.txt_mskh.Enabled = false;
             this.txt_mskh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mskh.Location = new System.Drawing.Point(228, 38);
             this.txt_mskh.Margin = new System.Windows.Forms.Padding(2);
