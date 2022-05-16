@@ -93,6 +93,16 @@ namespace _119000808_VoHoangHuy_19CT112.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_window_48px {
+            get {
+                object obj = ResourceManager.GetObject("close_window_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap main_back {
             get {
                 object obj = ResourceManager.GetObject("main back", resourceCulture);

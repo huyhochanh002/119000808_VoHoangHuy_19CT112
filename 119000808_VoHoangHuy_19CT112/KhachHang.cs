@@ -20,7 +20,7 @@ namespace _119000808_VoHoangHuy_19CT112
         // load khi chạy
         private void KhachHang_Load(object sender, EventArgs e)
         {
-            ondataview();
+            ondataviewKH();
         }
         public TrangChinh frm;
         public delegate void _dongTap();
@@ -51,7 +51,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 MessageBox.Show("Có Lỗi Khi Kết Nối Dữ Liệu Server ! ");
             }
         }
-        public void ondataview()
+        public void ondataviewKH()
         {
             try
             {
@@ -77,6 +77,7 @@ namespace _119000808_VoHoangHuy_19CT112
             txt_sdt.Text = "";
             txt_diachi.Text = "";
             txt_sldamua.Text = "";
+            btn_them.Enabled = true;
         }
         private void data_KhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -89,6 +90,7 @@ namespace _119000808_VoHoangHuy_19CT112
                     txt_sdt.Text = Convert.ToString(data_KhachHang.CurrentRow.Cells["SDT"].Value);
                     txt_diachi.Text = Convert.ToString(data_KhachHang.CurrentRow.Cells["DIACHI"].Value);
                     txt_sldamua.Text = Convert.ToString(data_KhachHang.CurrentRow.Cells["SLDAMUA"].Value);
+                    btn_them.Enabled = false;
                 }
             }
             catch (Exception e2)
@@ -175,6 +177,11 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Xóa Thất Bại ! ");
             }
+        }
+
+        private void btn_dong_Click(object sender, EventArgs e)
+        {
+            DongTap();
         }
     }
 }

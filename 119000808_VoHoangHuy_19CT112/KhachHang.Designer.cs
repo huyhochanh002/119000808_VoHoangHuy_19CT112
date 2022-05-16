@@ -39,13 +39,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_clear = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
+            this.data_KhachHang = new System.Windows.Forms.DataGridView();
+            this.btn_dong = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
-            this.data_KhachHang = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_KhachHang)).BeginInit();
             this.SuspendLayout();
@@ -158,6 +159,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_dong);
             this.panel1.Controls.Add(this.btn_clear);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txt_timkiem);
@@ -177,24 +179,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(990, 234);
+            this.panel1.Size = new System.Drawing.Size(1036, 234);
             this.panel1.TabIndex = 28;
-            // 
-            // btn_clear
-            // 
-            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
-            this.btn_clear.Location = new System.Drawing.Point(566, 157);
-            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(149, 60);
-            this.btn_clear.TabIndex = 30;
-            this.btn_clear.Text = "Làm Sạch";
-            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_clear.UseVisualStyleBackColor = true;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // label6
             // 
@@ -217,6 +203,54 @@
             this.txt_timkiem.Size = new System.Drawing.Size(105, 32);
             this.txt_timkiem.TabIndex = 28;
             this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
+            // 
+            // data_KhachHang
+            // 
+            this.data_KhachHang.AllowUserToAddRows = false;
+            this.data_KhachHang.AllowUserToDeleteRows = false;
+            this.data_KhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.data_KhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.data_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_KhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.data_KhachHang.GridColor = System.Drawing.Color.White;
+            this.data_KhachHang.Location = new System.Drawing.Point(0, 234);
+            this.data_KhachHang.Name = "data_KhachHang";
+            this.data_KhachHang.ReadOnly = true;
+            this.data_KhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_KhachHang.Size = new System.Drawing.Size(1036, 396);
+            this.data_KhachHang.TabIndex = 29;
+            this.data_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_KhachHang_CellClick);
+            // 
+            // btn_dong
+            // 
+            this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dong.ForeColor = System.Drawing.Color.Red;
+            this.btn_dong.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.close_window_48px;
+            this.btn_dong.Location = new System.Drawing.Point(992, 11);
+            this.btn_dong.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_dong.Name = "btn_dong";
+            this.btn_dong.Size = new System.Drawing.Size(37, 34);
+            this.btn_dong.TabIndex = 31;
+            this.btn_dong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
+            this.btn_clear.Location = new System.Drawing.Point(566, 157);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(149, 60);
+            this.btn_clear.TabIndex = 30;
+            this.btn_clear.Text = "Làm Sạch";
+            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_delete
             // 
@@ -266,29 +300,12 @@
             this.btn_them.UseVisualStyleBackColor = true;
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // data_KhachHang
-            // 
-            this.data_KhachHang.AllowUserToAddRows = false;
-            this.data_KhachHang.AllowUserToDeleteRows = false;
-            this.data_KhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.data_KhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.data_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_KhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.data_KhachHang.GridColor = System.Drawing.Color.White;
-            this.data_KhachHang.Location = new System.Drawing.Point(0, 234);
-            this.data_KhachHang.Name = "data_KhachHang";
-            this.data_KhachHang.ReadOnly = true;
-            this.data_KhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_KhachHang.Size = new System.Drawing.Size(990, 396);
-            this.data_KhachHang.TabIndex = 29;
-            this.data_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_KhachHang_CellClick);
-            // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(990, 630);
+            this.ClientSize = new System.Drawing.Size(1036, 630);
             this.Controls.Add(this.data_KhachHang);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
@@ -323,5 +340,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView data_KhachHang;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_dong;
     }
 }

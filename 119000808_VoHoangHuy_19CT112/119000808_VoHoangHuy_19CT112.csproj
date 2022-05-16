@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gas.Designer.cs">
+      <DependentUpon>Gas.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Gas.resx">
+      <DependentUpon>Gas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anh\close_window_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

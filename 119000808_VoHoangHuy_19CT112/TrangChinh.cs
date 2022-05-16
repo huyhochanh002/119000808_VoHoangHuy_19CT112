@@ -82,5 +82,33 @@ namespace _119000808_VoHoangHuy_19CT112
             }
         }
 
+        private void btn_gas_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.trangThai = true;
+                this.tentabmo = "Quản lý Gas";
+                if (!Kiemtramotab(tentabmo))
+                {
+                    TabItem t = tab_main.CreateTab(tentabmo);
+                    t.Name = "Gas";
+
+                    Gas gas = new Gas()
+                    {
+                        DongTap = new Gas._dongTap(DongTab),
+                        frm = this,
+                        TopLevel = false,
+                        Dock = DockStyle.Fill,
+                    };
+                    t.AttachedControl.Controls.Add(gas);
+                    gas.Show();
+                    tab_main.SelectedTabIndex = tab_main.Tabs.Count - 1;
+                }
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show("Lỗi Khi Mở Tab khách Hàng !");
+            }
+        }
     }
 }

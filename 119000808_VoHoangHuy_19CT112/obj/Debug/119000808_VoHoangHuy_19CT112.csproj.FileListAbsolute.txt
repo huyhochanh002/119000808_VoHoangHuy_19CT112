@@ -25,3 +25,4 @@ C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.csproj.CopyComplete
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.exe
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\119000808_VoHoangHuy_19CT112.pdb
+C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.Gas.resources
