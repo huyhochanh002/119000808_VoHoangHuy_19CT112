@@ -39,20 +39,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_timkiem = new System.Windows.Forms.TextBox();
-            this.data_KhachHang = new System.Windows.Forms.DataGridView();
             this.btn_dong = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.btn_delete = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
+            this.data_KhachHang = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_KhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_sldamua
             // 
+            this.txt_sldamua.Enabled = false;
             this.txt_sldamua.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_sldamua.Location = new System.Drawing.Point(887, 36);
             this.txt_sldamua.Margin = new System.Windows.Forms.Padding(2);
@@ -182,45 +183,6 @@
             this.panel1.Size = new System.Drawing.Size(1036, 234);
             this.panel1.TabIndex = 28;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(758, 175);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 24);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Tìm Kiếm";
-            // 
-            // txt_timkiem
-            // 
-            this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_timkiem.Location = new System.Drawing.Point(860, 169);
-            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.Size = new System.Drawing.Size(105, 32);
-            this.txt_timkiem.TabIndex = 28;
-            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
-            // 
-            // data_KhachHang
-            // 
-            this.data_KhachHang.AllowUserToAddRows = false;
-            this.data_KhachHang.AllowUserToDeleteRows = false;
-            this.data_KhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.data_KhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.data_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_KhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.data_KhachHang.GridColor = System.Drawing.Color.White;
-            this.data_KhachHang.Location = new System.Drawing.Point(0, 234);
-            this.data_KhachHang.Name = "data_KhachHang";
-            this.data_KhachHang.ReadOnly = true;
-            this.data_KhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_KhachHang.Size = new System.Drawing.Size(1036, 396);
-            this.data_KhachHang.TabIndex = 29;
-            this.data_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_KhachHang_CellClick);
-            // 
             // btn_dong
             // 
             this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,6 +213,28 @@
             this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label6.Location = new System.Drawing.Point(758, 175);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 24);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Tìm Kiếm";
+            // 
+            // txt_timkiem
+            // 
+            this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_timkiem.Location = new System.Drawing.Point(860, 169);
+            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(105, 32);
+            this.txt_timkiem.TabIndex = 28;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
             // 
             // btn_delete
             // 
@@ -299,6 +283,23 @@
             this.btn_them.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_them.UseVisualStyleBackColor = true;
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // data_KhachHang
+            // 
+            this.data_KhachHang.AllowUserToAddRows = false;
+            this.data_KhachHang.AllowUserToDeleteRows = false;
+            this.data_KhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.data_KhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.data_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_KhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.data_KhachHang.GridColor = System.Drawing.Color.White;
+            this.data_KhachHang.Location = new System.Drawing.Point(0, 234);
+            this.data_KhachHang.Name = "data_KhachHang";
+            this.data_KhachHang.ReadOnly = true;
+            this.data_KhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_KhachHang.Size = new System.Drawing.Size(1036, 396);
+            this.data_KhachHang.TabIndex = 29;
+            this.data_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_KhachHang_CellClick);
             // 
             // KhachHang
             // 

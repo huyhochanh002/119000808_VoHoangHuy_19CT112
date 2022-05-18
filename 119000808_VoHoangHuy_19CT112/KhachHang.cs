@@ -114,7 +114,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 cmd.Parameters.Add("@TENKH", SqlDbType.NVarChar).Value = txt_tenkh.Text;
                 cmd.Parameters.Add("@SDT", SqlDbType.Int).Value = int.Parse(txt_sdt.Text);
                 cmd.Parameters.Add("@DIACHI", SqlDbType.NVarChar).Value = txt_diachi.Text;
-                cmd.Parameters.Add("@SLDAMUA", SqlDbType.Int).Value = int.Parse(txt_sldamua.Text);
+                cmd.Parameters.Add("@SLDAMUA", SqlDbType.Int).Value =0;
                 cmd.ExecuteNonQuery();
                 cnn.Close();
                 MessageBox.Show("Thêm Thành Công");

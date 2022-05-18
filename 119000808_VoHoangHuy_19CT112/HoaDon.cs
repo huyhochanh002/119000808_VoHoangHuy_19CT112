@@ -114,5 +114,130 @@ namespace _119000808_VoHoangHuy_19CT112
                 MessageBox.Show("Có Lỗi Khi Hiện thị Dữ Liệu ! ");
             }
         }
+        // Lưu giá trị số lần mua
+        int solan;
+        private void data_KH_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+                {
+                    txt_msKH.Text = Convert.ToString(data_KH.CurrentRow.Cells["MSKH"].Value);
+                    txt_tenKH.Text = Convert.ToString(data_KH.CurrentRow.Cells["TENKH"].Value);
+                    txt_DC.Text = Convert.ToString(data_KH.CurrentRow.Cells["SDT"].Value);
+                    txt_sdtKH.Text = Convert.ToString(data_KH.CurrentRow.Cells["DIACHI"].Value);
+                    solan = Convert.ToInt32(data_KH.CurrentRow.Cells["SLDAMUA"].Value);
+                }
+            }
+            catch (Exception e2)
+            {
+            }
+        }
+
+        private void data_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+                {
+                    txt_msNV.Text = Convert.ToString(data_nhanvien.CurrentRow.Cells["MSNV"].Value);
+                }
+            }
+            catch (Exception e2)
+            {
+            }
+        }
+
+        private void data_Loaigas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+                {
+                    txt_msGAS.Text = Convert.ToString(data_Loaigas.CurrentRow.Cells["MSGAS"].Value);
+                    double tt = Convert.ToDouble(data_Loaigas.CurrentRow.Cells["DGGAS"].Value);
+                    double tong = tt * 1000;
+                    txt_tongtien.Text = tong.ToString();
+
+                }
+            }
+            catch (Exception e2)
+            {
+            }
+        }
+        public void clear()
+        {
+            txt_msKH.Text = "";
+            txt_tenKH.Text = "";
+            txt_DC.Text = "";
+            txt_sdtKH.Text = "";
+            txt_msNV.Text = "";
+            txt_msGAS.Text = "";
+            txt_tongtien.Text = "";
+
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            clear();
+            dtKH.Clear();
+            dtNV.Clear();
+            dtGAS.Clear();
+            daKH.Fill(dtKH);
+            daNV.Fill(dtNV);
+            daGAS.Fill(dtGAS);
+
+        }
+
+        private void btn_banhang_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Runnow();
+                string s = "insert into HoaDon (MSKH,MSGAS,MSNV,TENKH,SDTKH,DIACHI,TTIEN,NGAYBAN) values " +
+                    "(@MSKH,@MSGAS,@MSNV,@TENKH,@SDTKH,@DIACHI,@TTIEN,@NGAYBAN)";
+                SqlCommand cmd = new SqlCommand(s, cnn);
+                cmd.Parameters.Add("@MSKH", SqlDbType.Int).Value = int.Parse(txt_msKH.Text);
+                cmd.Parameters.Add("@MSGAS", SqlDbType.Int).Value = int.Parse(txt_msGAS.Text);
+                cmd.Parameters.Add("@MSNV", SqlDbType.Int).Value = int.Parse(txt_msNV.Text);
+                cmd.Parameters.Add("@TENKH", SqlDbType.NVarChar).Value = txt_tenKH.Text;
+                cmd.Parameters.Add("@SDTKH", SqlDbType.Int).Value = int.Parse(txt_sdtKH.Text);
+                cmd.Parameters.Add("@DIACHI", SqlDbType.NVarChar).Value = txt_DC.Text;
+                cmd.Parameters.Add("@TTIEN", SqlDbType.Float).Value = float.Parse(txt_tongtien.Text);
+                cmd.Parameters.Add("@NGAYBAN", SqlDbType.DateTime).Value = DateTime.Now;
+                cmd.ExecuteNonQuery();
+                cnn.Close();
+                MessageBox.Show("Tạo Hóa Đơn Thành Công");
+                updatesolanmua();
+                clear();
+
+            }
+            catch (Exception e2)
+            {
+                cnn.Close();
+                MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
+            }
+        }
+        public void updatesolanmua()
+        {
+            try
+            {
+                Runnow();
+                string s = "Update KhachHang set SLDAMUA="+(solan+1)+" where MSKH=@MSKH ";
+                SqlCommand cmd = new SqlCommand(s, cnn);
+                cmd.Parameters.Add("@MSKH", SqlDbType.Int).Value = int.Parse(txt_msKH.Text);
+                cmd.ExecuteNonQuery();
+                cnn.Close();
+
+            }
+            catch (Exception e2)
+            {
+                cnn.Close();
+            }
+        }
+
+        private void HoaDon_Leave(object sender, EventArgs e)
+        {
+        }
     }
 }

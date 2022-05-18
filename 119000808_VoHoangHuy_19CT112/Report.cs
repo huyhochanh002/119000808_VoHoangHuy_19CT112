@@ -17,13 +17,12 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             InitializeComponent();
         }
-        string maHD = string.Empty;
-        KhachHang db;
-        DataTable dtInHoaDon;
-        string err = string.Empty;
-        int rows = 0;
+        SqlConnection cnn = new SqlConnection();
+        string server = "LAPTOP-MV93PLLT\\SQLEXPRESS";
         private void Report_Load(object sender, EventArgs e)
         {
+            string s = "Server=" + server + ";database=BanGas;uid=sa;pwd=123456";
+            cnn.ConnectionString = s;
 
             this.reportViewer1.RefreshReport();
         }

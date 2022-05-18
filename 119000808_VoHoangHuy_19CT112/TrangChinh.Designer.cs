@@ -32,11 +32,11 @@
             this.tab_main = new DevComponents.DotNetBar.TabControl();
             this.pn_top = new System.Windows.Forms.Panel();
             this.pn_left = new System.Windows.Forms.Panel();
+            this.btn_HoaDon = new System.Windows.Forms.Button();
             this.btn_nhanvien = new System.Windows.Forms.Button();
             this.btn_gas = new System.Windows.Forms.Button();
             this.btn_KH = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_HoaDon = new System.Windows.Forms.Button();
             this.pn_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab_main)).BeginInit();
             this.pn_left.SuspendLayout();
@@ -92,6 +92,25 @@
             this.pn_left.Name = "pn_left";
             this.pn_left.Size = new System.Drawing.Size(293, 720);
             this.pn_left.TabIndex = 0;
+            // 
+            // btn_HoaDon
+            // 
+            this.btn_HoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_HoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_HoaDon.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_HoaDon.FlatAppearance.BorderSize = 3;
+            this.btn_HoaDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_HoaDon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_HoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_HoaDon.Location = new System.Drawing.Point(0, 364);
+            this.btn_HoaDon.Name = "btn_HoaDon";
+            this.btn_HoaDon.Size = new System.Drawing.Size(293, 61);
+            this.btn_HoaDon.TabIndex = 5;
+            this.btn_HoaDon.Text = "Bán Hàng";
+            this.btn_HoaDon.UseVisualStyleBackColor = false;
+            this.btn_HoaDon.Click += new System.EventHandler(this.btn_HoaDon_Click);
             // 
             // btn_nhanvien
             // 
@@ -159,25 +178,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(293, 181);
             this.panel1.TabIndex = 1;
-            // 
-            // btn_HoaDon
-            // 
-            this.btn_HoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_HoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_HoaDon.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_HoaDon.FlatAppearance.BorderSize = 3;
-            this.btn_HoaDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_HoaDon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_HoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_HoaDon.Location = new System.Drawing.Point(0, 364);
-            this.btn_HoaDon.Name = "btn_HoaDon";
-            this.btn_HoaDon.Size = new System.Drawing.Size(293, 61);
-            this.btn_HoaDon.TabIndex = 5;
-            this.btn_HoaDon.Text = "Hóa Đơn";
-            this.btn_HoaDon.UseVisualStyleBackColor = false;
-            this.btn_HoaDon.Click += new System.EventHandler(this.btn_HoaDon_Click);
             // 
             // TrangChinh
             // 

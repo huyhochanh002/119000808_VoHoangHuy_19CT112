@@ -49,6 +49,8 @@
             this.data_KH = new System.Windows.Forms.DataGridView();
             this.data_nhanvien = new System.Windows.Forms.DataGridView();
             this.data_Loaigas = new System.Windows.Forms.DataGridView();
+            this.btn_banhang = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_KH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_nhanvien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_Loaigas)).BeginInit();
@@ -265,6 +267,7 @@
             this.data_KH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.data_KH.Size = new System.Drawing.Size(478, 363);
             this.data_KH.TabIndex = 60;
+            this.data_KH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_KH_CellClick);
             // 
             // data_nhanvien
             // 
@@ -278,6 +281,7 @@
             this.data_nhanvien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.data_nhanvien.Size = new System.Drawing.Size(254, 363);
             this.data_nhanvien.TabIndex = 61;
+            this.data_nhanvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_nhanvien_CellClick);
             // 
             // data_Loaigas
             // 
@@ -291,6 +295,39 @@
             this.data_Loaigas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.data_Loaigas.Size = new System.Drawing.Size(265, 363);
             this.data_Loaigas.TabIndex = 62;
+            this.data_Loaigas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_Loaigas_CellClick);
+            // 
+            // btn_banhang
+            // 
+            this.btn_banhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_banhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_banhang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_banhang.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.cap_nhat;
+            this.btn_banhang.Location = new System.Drawing.Point(355, 204);
+            this.btn_banhang.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_banhang.Name = "btn_banhang";
+            this.btn_banhang.Size = new System.Drawing.Size(158, 60);
+            this.btn_banhang.TabIndex = 63;
+            this.btn_banhang.Text = "Bán Hàng";
+            this.btn_banhang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_banhang.UseVisualStyleBackColor = true;
+            this.btn_banhang.Click += new System.EventHandler(this.btn_banhang_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
+            this.btn_clear.Location = new System.Drawing.Point(526, 204);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(186, 60);
+            this.btn_clear.TabIndex = 64;
+            this.btn_clear.Text = "Làm Sạch / Mới";
+            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // HoaDon
             // 
@@ -298,6 +335,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1013, 634);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_banhang);
             this.Controls.Add(this.data_Loaigas);
             this.Controls.Add(this.data_nhanvien);
             this.Controls.Add(this.data_KH);
@@ -323,6 +362,7 @@
             this.Name = "HoaDon";
             this.Text = "HoaDon";
             this.Load += new System.EventHandler(this.HoaDon_Load);
+            this.Leave += new System.EventHandler(this.HoaDon_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.data_KH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_nhanvien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_Loaigas)).EndInit();
@@ -354,5 +394,7 @@
         private System.Windows.Forms.DataGridView data_KH;
         private System.Windows.Forms.DataGridView data_nhanvien;
         private System.Windows.Forms.DataGridView data_Loaigas;
+        private System.Windows.Forms.Button btn_banhang;
+        private System.Windows.Forms.Button btn_clear;
     }
 }
