@@ -96,10 +96,12 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
             }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Runnow();
@@ -122,10 +124,12 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
             }
+
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Runnow();
@@ -145,6 +149,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Xóa Thất Bại ! ");
             }
+
         }
 
         private void btn_clear_Click(object sender, EventArgs e)

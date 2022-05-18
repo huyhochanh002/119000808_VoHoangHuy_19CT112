@@ -36,7 +36,7 @@ namespace _119000808_VoHoangHuy_19CT112
         string server = "LAPTOP-MV93PLLT\\SQLEXPRESS";
         //dataapdater dataset
         SqlDataAdapter da = new SqlDataAdapter();
-        DataTable dt =new DataTable();
+        DataTable dt = new DataTable();
         BindingSource bin = new BindingSource();
         public void Runnow()
         {
@@ -57,14 +57,14 @@ namespace _119000808_VoHoangHuy_19CT112
             {
                 Runnow();
                 string s = "Select * From KhachHang";
-                SqlCommand cmd = new SqlCommand(s,cnn);
+                SqlCommand cmd = new SqlCommand(s, cnn);
                 da.SelectCommand = cmd;
                 da.Fill(dt);
                 bin.DataSource = dt;
                 data_KhachHang.DataSource = bin;
                 cnn.Close();
             }
-            catch(Exception e2)
+            catch (Exception e2)
             {
                 cnn.Close();
                 MessageBox.Show("Có Lỗi Khi Hiện thị Dữ Liệu ! ");
@@ -94,7 +94,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 }
             }
             catch (Exception e2)
-            { 
+            {
             }
         }
 
@@ -105,11 +105,12 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 Runnow();
                 string s = "insert into KhachHang(TENKH,SDT,DIACHI,SLDAMUA) values " +
                     "(@TENKH,@SDT,@DIACHI,@SLDAMUA)";
-                SqlCommand cmd = new SqlCommand(s,cnn);
+                SqlCommand cmd = new SqlCommand(s, cnn);
                 cmd.Parameters.Add("@TENKH", SqlDbType.NVarChar).Value = txt_tenkh.Text;
                 cmd.Parameters.Add("@SDT", SqlDbType.Int).Value = int.Parse(txt_sdt.Text);
                 cmd.Parameters.Add("@DIACHI", SqlDbType.NVarChar).Value = txt_diachi.Text;
@@ -120,9 +121,9 @@ namespace _119000808_VoHoangHuy_19CT112
                 clear();
                 dt.Clear();
                 da.Fill(dt);
-                
+
             }
-            catch(Exception e2)
+            catch (Exception e2)
             {
                 cnn.Close();
                 MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
@@ -131,6 +132,7 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Runnow();
@@ -154,10 +156,12 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
             }
+
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Runnow();
@@ -177,6 +181,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Xóa Thất Bại ! ");
             }
+
         }
 
         private void btn_dong_Click(object sender, EventArgs e)

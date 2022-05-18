@@ -139,5 +139,34 @@ namespace _119000808_VoHoangHuy_19CT112
                 MessageBox.Show("Lỗi Khi Mở Tab khách Hàng !");
             }
         }
+
+        private void btn_HoaDon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.trangThai = true;
+                this.tentabmo = "Quản lý Hóa Đơn";
+                if (!Kiemtramotab(tentabmo))
+                {
+                    TabItem t = tab_main.CreateTab(tentabmo);
+                    t.Name = "hoadon";
+
+                    HoaDon hoaDon = new HoaDon()
+                    {
+                        DongTap = new HoaDon._dongTap(DongTab),
+                        frm = this,
+                        TopLevel = false,
+                        Dock = DockStyle.Fill,
+                    };
+                    t.AttachedControl.Controls.Add(hoaDon);
+                    hoaDon.Show();
+                    tab_main.SelectedTabIndex = tab_main.Tabs.Count - 1;
+                }
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show("Lỗi Khi Mở Tab khách Hàng !");
+            }
+        }
     }
 }

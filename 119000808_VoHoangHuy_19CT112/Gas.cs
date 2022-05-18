@@ -47,6 +47,7 @@ namespace _119000808_VoHoangHuy_19CT112
         }
         public void ondataviewGAS()
         {
+
             try
             {
                 Runnow();
@@ -96,6 +97,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
             }
+
         }
 
         private void Gas_Load(object sender, EventArgs e)
@@ -110,6 +112,7 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Runnow();
@@ -132,10 +135,12 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
             }
+
         }
 
         private void data_gas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             try
             {
                 if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
@@ -178,6 +183,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Xóa Thất Bại ! ");
             }
+
         }
     }
 }
