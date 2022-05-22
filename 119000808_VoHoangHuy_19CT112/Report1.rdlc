@@ -24,7 +24,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox12</rd:DefaultName>
         <Top>0.13417in</Top>
-        <Left>1.43125in</Left>
+        <Left>1.87917in</Left>
         <Height>0.40625in</Height>
         <Width>7.32292in</Width>
         <Style>
@@ -52,8 +52,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>2.18625in</Top>
-        <Left>6.22792in</Left>
+        <Top>2.43625in</Top>
+        <Left>7.03in</Left>
         <Height>0.27083in</Height>
         <Width>2.94792in</Width>
         <ZIndex>1</ZIndex>
@@ -82,8 +82,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>3.11333in</Top>
-        <Left>6.33208in</Left>
+        <Top>3.36333in</Top>
+        <Left>7.13416in</Left>
         <Height>0.25in</Height>
         <Width>1.25in</Width>
         <ZIndex>2</ZIndex>
@@ -114,8 +114,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>3.11333in</Top>
-        <Left>7.62375in</Left>
+        <Top>3.36333in</Top>
+        <Left>8.42583in</Left>
         <Height>0.25in</Height>
         <Width>1.13042in</Width>
         <ZIndex>3</ZIndex>
@@ -133,25 +133,25 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.45903in</Width>
+              <Width>1.6123in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.45903in</Width>
+              <Width>1.6123in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.45903in</Width>
+              <Width>1.6123in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.45903in</Width>
+              <Width>1.6123in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.45903in</Width>
+              <Width>1.6123in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.8807in</Width>
+              <Width>1.03397in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.69916in</Width>
+              <Width>1.85243in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -660,7 +660,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>1.36333in</Top>
         <Height>0.5in</Height>
-        <Width>9.87501in</Width>
+        <Width>10.94793in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -907,10 +907,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>3.875in</Height>
+    <Height>4.83333in</Height>
     <Style />
   </Body>
-  <Width>9.87501in</Width>
+  <Width>10.94793in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -927,11 +927,18 @@
       </ConnectionProperties>
       <rd:DataSourceID>d4a25d06-6769-4675-9a68-2d1364336afc</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="BanGasDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>a64cb778-5602-4023-9250-c2642de934f9</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>DataSet1</DataSourceName>
+        <DataSourceName>BanGasDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -973,12 +980,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\DataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>RPT_HoaDonBanGas</rd:TableName>
+        <rd:DataSetName>BanGasDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\BanGasDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>RPT_HOADON</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>RPT_HoaDonBanGasTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>RPT_HOADONTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

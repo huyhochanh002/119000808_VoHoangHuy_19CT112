@@ -67,24 +67,55 @@ namespace _119000808_VoHoangHuy_19CT112
         private void btn_clear_Click(object sender, EventArgs e)
         {
             dt.Clear();
+            clear();
             ondataviewHoaDon();
 
 
         }
-        static int masokhachhang_in;
+        private static int MSHD;
+
         private void data_HoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex>=0&&e.ColumnIndex>=0)
+            try
             {
-                 masokhachhang_in = Convert.ToInt32(data_HoaDon.CurrentRow.Cells["MSKH"].Value);
-                txt_msKH.Text = masokhachhang_in.ToString();
-                txt_msGAS.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["MSGAS"].Value);
-                txt_msNV.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["MSNV"].Value);
-                txt_tenKH.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["TENKH"].Value);
-                txt_sdtKH.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["SDTKH"].Value);
-                txt_DC.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["DIACHI"].Value);
-                txt_tongtien.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["TTIEN"].Value);
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+                {
+                    MSHD = Convert.ToInt32(data_HoaDon.CurrentRow.Cells["MSDONHANG"].Value);
+                    txt_msKH.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["MSKH"].Value);
+                    txt_msGAS.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["MSGAS"].Value);
+                    txt_msNV.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["MSNV"].Value);
+                    txt_tenKH.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["TENKH"].Value);
+                    txt_sdtKH.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["SDTKH"].Value);
+                    txt_DC.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["DIACHI"].Value);
+                    txt_tongtien.Text = Convert.ToString(data_HoaDon.CurrentRow.Cells["TTIEN"].Value);
+                }
             }
+            catch (Exception e2)
+            {
+                MessageBox.Show("Không có dữ liệu ! ");
+            }
+        }
+
+        private void btn_in_Click(object sender, EventArgs e)
+        {
+            BaoCao bc = new BaoCao(MSHD);
+            bc.ShowDialog();
+        }
+        public void clear()
+        {
+            MSHD = 0;
+            txt_msKH.Text = "";
+            txt_msGAS.Text = "";
+            txt_msNV.Text = "";
+            txt_tenKH.Text = "";
+            txt_sdtKH.Text = "";
+            txt_DC.Text = "";
+            txt_tongtien.Text = "";
+        }
+
+        private void btn_dong_Click(object sender, EventArgs e)
+        {
+            DongTap();
         }
     }
 }

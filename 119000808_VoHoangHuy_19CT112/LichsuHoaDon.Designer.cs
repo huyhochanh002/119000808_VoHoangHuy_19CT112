@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.rPTHoaDonBanGasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new _119000808_VoHoangHuy_19CT112.DataSet1();
-            this.rPT_HoaDonBanGasTableAdapter = new _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters.RPT_HoaDonBanGasTableAdapter();
             this.data_HoaDon = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_clear = new System.Windows.Forms.Button();
@@ -50,25 +46,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_msKH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.rPTHoaDonBanGasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            this.btn_dong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_HoaDon)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // rPTHoaDonBanGasBindingSource
-            // 
-            this.rPTHoaDonBanGasBindingSource.DataMember = "RPT_HoaDonBanGas";
-            this.rPTHoaDonBanGasBindingSource.DataSource = this.dataSet1;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rPT_HoaDonBanGasTableAdapter
-            // 
-            this.rPT_HoaDonBanGasTableAdapter.ClearBeforeFill = true;
             // 
             // data_HoaDon
             // 
@@ -78,18 +59,19 @@
             this.data_HoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.data_HoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_HoaDon.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.data_HoaDon.Location = new System.Drawing.Point(0, 329);
+            this.data_HoaDon.Location = new System.Drawing.Point(0, 318);
             this.data_HoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.data_HoaDon.Name = "data_HoaDon";
             this.data_HoaDon.ReadOnly = true;
             this.data_HoaDon.RowHeadersWidth = 51;
             this.data_HoaDon.RowTemplate.Height = 24;
-            this.data_HoaDon.Size = new System.Drawing.Size(1032, 324);
+            this.data_HoaDon.Size = new System.Drawing.Size(1032, 335);
             this.data_HoaDon.TabIndex = 72;
             this.data_HoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_HoaDon_CellClick);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_dong);
             this.panel1.Controls.Add(this.btn_clear);
             this.panel1.Controls.Add(this.btn_in);
             this.panel1.Controls.Add(this.txt_tongtien);
@@ -110,7 +92,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1032, 325);
+            this.panel1.Size = new System.Drawing.Size(1032, 314);
             this.panel1.TabIndex = 73;
             // 
             // btn_clear
@@ -143,6 +125,7 @@
             this.btn_in.Text = "In Hóa Đơn";
             this.btn_in.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_in.UseVisualStyleBackColor = true;
+            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
             // 
             // txt_tongtien
             // 
@@ -298,6 +281,21 @@
             this.label2.TabIndex = 58;
             this.label2.Text = "MS Khách Hàng";
             // 
+            // btn_dong
+            // 
+            this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dong.ForeColor = System.Drawing.Color.Red;
+            this.btn_dong.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.close_window_48px;
+            this.btn_dong.Location = new System.Drawing.Point(972, 11);
+            this.btn_dong.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_dong.Name = "btn_dong";
+            this.btn_dong.Size = new System.Drawing.Size(37, 34);
+            this.btn_dong.TabIndex = 74;
+            this.btn_dong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
+            // 
             // LichsuHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,8 +308,6 @@
             this.Name = "LichsuHoaDon";
             this.Text = "Report";
             this.Load += new System.EventHandler(this.Report_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.rPTHoaDonBanGasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_HoaDon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -320,9 +316,6 @@
         }
 
         #endregion
-        private DataSet1 dataSet1;
-        private System.Windows.Forms.BindingSource rPTHoaDonBanGasBindingSource;
-        private DataSet1TableAdapters.RPT_HoaDonBanGasTableAdapter rPT_HoaDonBanGasTableAdapter;
         private System.Windows.Forms.DataGridView data_HoaDon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txt_tongtien;
@@ -341,5 +334,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_in;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_dong;
     }
 }

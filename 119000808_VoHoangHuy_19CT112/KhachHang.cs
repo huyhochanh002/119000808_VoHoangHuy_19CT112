@@ -199,6 +199,7 @@ namespace _119000808_VoHoangHuy_19CT112
                     DataView dv = new DataView(dt);
                     dv.RowFilter = "TENKH like '%" + txt_timkiem.Text + "%'";
                     data_KhachHang.DataSource = dv;
+                    clear();
                 }catch(Exception e2)
                 {
 

@@ -20,17 +20,17 @@ namespace _119000808_VoHoangHuy_19CT112 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("BanGasDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSet1 : global::System.Data.DataSet {
+    public partial class BanGasDataSet : global::System.Data.DataSet {
         
-        private RPT_HoaDonBanGasDataTable tableRPT_HoaDonBanGas;
+        private RPT_HOADONDataTable tableRPT_HOADON;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DataSet1() {
+        public BanGasDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected BanGasDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace _119000808_VoHoangHuy_19CT112 {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["RPT_HoaDonBanGas"] != null)) {
-                    base.Tables.Add(new RPT_HoaDonBanGasDataTable(ds.Tables["RPT_HoaDonBanGas"]));
+                if ((ds.Tables["RPT_HOADON"] != null)) {
+                    base.Tables.Add(new RPT_HOADONDataTable(ds.Tables["RPT_HOADON"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace _119000808_VoHoangHuy_19CT112 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public RPT_HoaDonBanGasDataTable RPT_HoaDonBanGas {
+        public RPT_HOADONDataTable RPT_HOADON {
             get {
-                return this.tableRPT_HoaDonBanGas;
+                return this.tableRPT_HOADON;
             }
         }
         
@@ -127,7 +127,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSet1 cln = ((DataSet1)(base.Clone()));
+            BanGasDataSet cln = ((BanGasDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace _119000808_VoHoangHuy_19CT112 {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["RPT_HoaDonBanGas"] != null)) {
-                    base.Tables.Add(new RPT_HoaDonBanGasDataTable(ds.Tables["RPT_HoaDonBanGas"]));
+                if ((ds.Tables["RPT_HOADON"] != null)) {
+                    base.Tables.Add(new RPT_HOADONDataTable(ds.Tables["RPT_HOADON"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace _119000808_VoHoangHuy_19CT112 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableRPT_HoaDonBanGas = ((RPT_HoaDonBanGasDataTable)(base.Tables["RPT_HoaDonBanGas"]));
+            this.tableRPT_HOADON = ((RPT_HOADONDataTable)(base.Tables["RPT_HOADON"]));
             if ((initTable == true)) {
-                if ((this.tableRPT_HoaDonBanGas != null)) {
-                    this.tableRPT_HoaDonBanGas.InitVars();
+                if ((this.tableRPT_HOADON != null)) {
+                    this.tableRPT_HOADON.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace _119000808_VoHoangHuy_19CT112 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSet1";
+            this.DataSetName = "BanGasDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/BanGasDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableRPT_HoaDonBanGas = new RPT_HoaDonBanGasDataTable();
-            base.Tables.Add(this.tableRPT_HoaDonBanGas);
+            this.tableRPT_HOADON = new RPT_HOADONDataTable();
+            base.Tables.Add(this.tableRPT_HOADON);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeRPT_HoaDonBanGas() {
+        private bool ShouldSerializeRPT_HOADON() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSet1 ds = new DataSet1();
+            BanGasDataSet ds = new BanGasDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,14 +270,14 @@ namespace _119000808_VoHoangHuy_19CT112 {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void RPT_HoaDonBanGasRowChangeEventHandler(object sender, RPT_HoaDonBanGasRowChangeEvent e);
+        public delegate void RPT_HOADONRowChangeEventHandler(object sender, RPT_HOADONRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class RPT_HoaDonBanGasDataTable : global::System.Data.TypedTableBase<RPT_HoaDonBanGasRow> {
+        public partial class RPT_HOADONDataTable : global::System.Data.TypedTableBase<RPT_HOADONRow> {
             
             private global::System.Data.DataColumn columnMSDONHANG;
             
@@ -299,8 +299,8 @@ namespace _119000808_VoHoangHuy_19CT112 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RPT_HoaDonBanGasDataTable() {
-                this.TableName = "RPT_HoaDonBanGas";
+            public RPT_HOADONDataTable() {
+                this.TableName = "RPT_HOADON";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -308,7 +308,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal RPT_HoaDonBanGasDataTable(global::System.Data.DataTable table) {
+            internal RPT_HOADONDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -325,7 +325,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected RPT_HoaDonBanGasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected RPT_HOADONDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -413,34 +413,34 @@ namespace _119000808_VoHoangHuy_19CT112 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RPT_HoaDonBanGasRow this[int index] {
+            public RPT_HOADONRow this[int index] {
                 get {
-                    return ((RPT_HoaDonBanGasRow)(this.Rows[index]));
+                    return ((RPT_HOADONRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RPT_HoaDonBanGasRowChangeEventHandler RPT_HoaDonBanGasRowChanging;
+            public event RPT_HOADONRowChangeEventHandler RPT_HOADONRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RPT_HoaDonBanGasRowChangeEventHandler RPT_HoaDonBanGasRowChanged;
+            public event RPT_HOADONRowChangeEventHandler RPT_HOADONRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RPT_HoaDonBanGasRowChangeEventHandler RPT_HoaDonBanGasRowDeleting;
+            public event RPT_HOADONRowChangeEventHandler RPT_HOADONRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RPT_HoaDonBanGasRowChangeEventHandler RPT_HoaDonBanGasRowDeleted;
+            public event RPT_HOADONRowChangeEventHandler RPT_HOADONRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddRPT_HoaDonBanGasRow(RPT_HoaDonBanGasRow row) {
+            public void AddRPT_HOADONRow(RPT_HOADONRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RPT_HoaDonBanGasRow AddRPT_HoaDonBanGasRow(int MSKH, int MSGAS, int MSNV, string TENKH, int SDTKH, string DIACHI, double TTIEN, System.DateTime NGAYBAN) {
-                RPT_HoaDonBanGasRow rowRPT_HoaDonBanGasRow = ((RPT_HoaDonBanGasRow)(this.NewRow()));
+            public RPT_HOADONRow AddRPT_HOADONRow(int MSKH, int MSGAS, int MSNV, string TENKH, int SDTKH, string DIACHI, double TTIEN, System.DateTime NGAYBAN) {
+                RPT_HOADONRow rowRPT_HOADONRow = ((RPT_HOADONRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         MSKH,
@@ -451,22 +451,22 @@ namespace _119000808_VoHoangHuy_19CT112 {
                         DIACHI,
                         TTIEN,
                         NGAYBAN};
-                rowRPT_HoaDonBanGasRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowRPT_HoaDonBanGasRow);
-                return rowRPT_HoaDonBanGasRow;
+                rowRPT_HOADONRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowRPT_HOADONRow);
+                return rowRPT_HOADONRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RPT_HoaDonBanGasRow FindByMSDONHANG(int MSDONHANG) {
-                return ((RPT_HoaDonBanGasRow)(this.Rows.Find(new object[] {
+            public RPT_HOADONRow FindByMSDONHANG(int MSDONHANG) {
+                return ((RPT_HOADONRow)(this.Rows.Find(new object[] {
                             MSDONHANG})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                RPT_HoaDonBanGasDataTable cln = ((RPT_HoaDonBanGasDataTable)(base.Clone()));
+                RPT_HOADONDataTable cln = ((RPT_HOADONDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -474,7 +474,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new RPT_HoaDonBanGasDataTable();
+                return new RPT_HOADONDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -529,28 +529,28 @@ namespace _119000808_VoHoangHuy_19CT112 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RPT_HoaDonBanGasRow NewRPT_HoaDonBanGasRow() {
-                return ((RPT_HoaDonBanGasRow)(this.NewRow()));
+            public RPT_HOADONRow NewRPT_HOADONRow() {
+                return ((RPT_HOADONRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new RPT_HoaDonBanGasRow(builder);
+                return new RPT_HOADONRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(RPT_HoaDonBanGasRow);
+                return typeof(RPT_HOADONRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.RPT_HoaDonBanGasRowChanged != null)) {
-                    this.RPT_HoaDonBanGasRowChanged(this, new RPT_HoaDonBanGasRowChangeEvent(((RPT_HoaDonBanGasRow)(e.Row)), e.Action));
+                if ((this.RPT_HOADONRowChanged != null)) {
+                    this.RPT_HOADONRowChanged(this, new RPT_HOADONRowChangeEvent(((RPT_HOADONRow)(e.Row)), e.Action));
                 }
             }
             
@@ -558,8 +558,8 @@ namespace _119000808_VoHoangHuy_19CT112 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.RPT_HoaDonBanGasRowChanging != null)) {
-                    this.RPT_HoaDonBanGasRowChanging(this, new RPT_HoaDonBanGasRowChangeEvent(((RPT_HoaDonBanGasRow)(e.Row)), e.Action));
+                if ((this.RPT_HOADONRowChanging != null)) {
+                    this.RPT_HOADONRowChanging(this, new RPT_HOADONRowChangeEvent(((RPT_HOADONRow)(e.Row)), e.Action));
                 }
             }
             
@@ -567,8 +567,8 @@ namespace _119000808_VoHoangHuy_19CT112 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.RPT_HoaDonBanGasRowDeleted != null)) {
-                    this.RPT_HoaDonBanGasRowDeleted(this, new RPT_HoaDonBanGasRowChangeEvent(((RPT_HoaDonBanGasRow)(e.Row)), e.Action));
+                if ((this.RPT_HOADONRowDeleted != null)) {
+                    this.RPT_HOADONRowDeleted(this, new RPT_HOADONRowChangeEvent(((RPT_HOADONRow)(e.Row)), e.Action));
                 }
             }
             
@@ -576,14 +576,14 @@ namespace _119000808_VoHoangHuy_19CT112 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.RPT_HoaDonBanGasRowDeleting != null)) {
-                    this.RPT_HoaDonBanGasRowDeleting(this, new RPT_HoaDonBanGasRowChangeEvent(((RPT_HoaDonBanGasRow)(e.Row)), e.Action));
+                if ((this.RPT_HOADONRowDeleting != null)) {
+                    this.RPT_HOADONRowDeleting(this, new RPT_HOADONRowChangeEvent(((RPT_HOADONRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveRPT_HoaDonBanGasRow(RPT_HoaDonBanGasRow row) {
+            public void RemoveRPT_HOADONRow(RPT_HOADONRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -592,7 +592,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet1 ds = new DataSet1();
+                BanGasDataSet ds = new BanGasDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -610,7 +610,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "RPT_HoaDonBanGasDataTable";
+                attribute2.FixedValue = "RPT_HOADONDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -654,25 +654,25 @@ namespace _119000808_VoHoangHuy_19CT112 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class RPT_HoaDonBanGasRow : global::System.Data.DataRow {
+        public partial class RPT_HOADONRow : global::System.Data.DataRow {
             
-            private RPT_HoaDonBanGasDataTable tableRPT_HoaDonBanGas;
+            private RPT_HOADONDataTable tableRPT_HOADON;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal RPT_HoaDonBanGasRow(global::System.Data.DataRowBuilder rb) : 
+            internal RPT_HOADONRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableRPT_HoaDonBanGas = ((RPT_HoaDonBanGasDataTable)(this.Table));
+                this.tableRPT_HOADON = ((RPT_HOADONDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int MSDONHANG {
                 get {
-                    return ((int)(this[this.tableRPT_HoaDonBanGas.MSDONHANGColumn]));
+                    return ((int)(this[this.tableRPT_HOADON.MSDONHANGColumn]));
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.MSDONHANGColumn] = value;
+                    this[this.tableRPT_HOADON.MSDONHANGColumn] = value;
                 }
             }
             
@@ -680,10 +680,10 @@ namespace _119000808_VoHoangHuy_19CT112 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int MSKH {
                 get {
-                    return ((int)(this[this.tableRPT_HoaDonBanGas.MSKHColumn]));
+                    return ((int)(this[this.tableRPT_HOADON.MSKHColumn]));
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.MSKHColumn] = value;
+                    this[this.tableRPT_HOADON.MSKHColumn] = value;
                 }
             }
             
@@ -691,10 +691,10 @@ namespace _119000808_VoHoangHuy_19CT112 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int MSGAS {
                 get {
-                    return ((int)(this[this.tableRPT_HoaDonBanGas.MSGASColumn]));
+                    return ((int)(this[this.tableRPT_HOADON.MSGASColumn]));
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.MSGASColumn] = value;
+                    this[this.tableRPT_HOADON.MSGASColumn] = value;
                 }
             }
             
@@ -702,10 +702,10 @@ namespace _119000808_VoHoangHuy_19CT112 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int MSNV {
                 get {
-                    return ((int)(this[this.tableRPT_HoaDonBanGas.MSNVColumn]));
+                    return ((int)(this[this.tableRPT_HOADON.MSNVColumn]));
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.MSNVColumn] = value;
+                    this[this.tableRPT_HOADON.MSNVColumn] = value;
                 }
             }
             
@@ -714,14 +714,14 @@ namespace _119000808_VoHoangHuy_19CT112 {
             public string TENKH {
                 get {
                     try {
-                        return ((string)(this[this.tableRPT_HoaDonBanGas.TENKHColumn]));
+                        return ((string)(this[this.tableRPT_HOADON.TENKHColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TENKH\' in table \'RPT_HoaDonBanGas\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TENKH\' in table \'RPT_HOADON\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.TENKHColumn] = value;
+                    this[this.tableRPT_HOADON.TENKHColumn] = value;
                 }
             }
             
@@ -730,14 +730,14 @@ namespace _119000808_VoHoangHuy_19CT112 {
             public int SDTKH {
                 get {
                     try {
-                        return ((int)(this[this.tableRPT_HoaDonBanGas.SDTKHColumn]));
+                        return ((int)(this[this.tableRPT_HOADON.SDTKHColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SDTKH\' in table \'RPT_HoaDonBanGas\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SDTKH\' in table \'RPT_HOADON\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.SDTKHColumn] = value;
+                    this[this.tableRPT_HOADON.SDTKHColumn] = value;
                 }
             }
             
@@ -746,14 +746,14 @@ namespace _119000808_VoHoangHuy_19CT112 {
             public string DIACHI {
                 get {
                     try {
-                        return ((string)(this[this.tableRPT_HoaDonBanGas.DIACHIColumn]));
+                        return ((string)(this[this.tableRPT_HOADON.DIACHIColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DIACHI\' in table \'RPT_HoaDonBanGas\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIACHI\' in table \'RPT_HOADON\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.DIACHIColumn] = value;
+                    this[this.tableRPT_HOADON.DIACHIColumn] = value;
                 }
             }
             
@@ -762,14 +762,14 @@ namespace _119000808_VoHoangHuy_19CT112 {
             public double TTIEN {
                 get {
                     try {
-                        return ((double)(this[this.tableRPT_HoaDonBanGas.TTIENColumn]));
+                        return ((double)(this[this.tableRPT_HOADON.TTIENColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TTIEN\' in table \'RPT_HoaDonBanGas\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TTIEN\' in table \'RPT_HOADON\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.TTIENColumn] = value;
+                    this[this.tableRPT_HOADON.TTIENColumn] = value;
                 }
             }
             
@@ -778,75 +778,75 @@ namespace _119000808_VoHoangHuy_19CT112 {
             public System.DateTime NGAYBAN {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableRPT_HoaDonBanGas.NGAYBANColumn]));
+                        return ((global::System.DateTime)(this[this.tableRPT_HOADON.NGAYBANColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYBAN\' in table \'RPT_HoaDonBanGas\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYBAN\' in table \'RPT_HOADON\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRPT_HoaDonBanGas.NGAYBANColumn] = value;
+                    this[this.tableRPT_HOADON.NGAYBANColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTENKHNull() {
-                return this.IsNull(this.tableRPT_HoaDonBanGas.TENKHColumn);
+                return this.IsNull(this.tableRPT_HOADON.TENKHColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTENKHNull() {
-                this[this.tableRPT_HoaDonBanGas.TENKHColumn] = global::System.Convert.DBNull;
+                this[this.tableRPT_HOADON.TENKHColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSDTKHNull() {
-                return this.IsNull(this.tableRPT_HoaDonBanGas.SDTKHColumn);
+                return this.IsNull(this.tableRPT_HOADON.SDTKHColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetSDTKHNull() {
-                this[this.tableRPT_HoaDonBanGas.SDTKHColumn] = global::System.Convert.DBNull;
+                this[this.tableRPT_HOADON.SDTKHColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDIACHINull() {
-                return this.IsNull(this.tableRPT_HoaDonBanGas.DIACHIColumn);
+                return this.IsNull(this.tableRPT_HOADON.DIACHIColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDIACHINull() {
-                this[this.tableRPT_HoaDonBanGas.DIACHIColumn] = global::System.Convert.DBNull;
+                this[this.tableRPT_HOADON.DIACHIColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTTIENNull() {
-                return this.IsNull(this.tableRPT_HoaDonBanGas.TTIENColumn);
+                return this.IsNull(this.tableRPT_HOADON.TTIENColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTTIENNull() {
-                this[this.tableRPT_HoaDonBanGas.TTIENColumn] = global::System.Convert.DBNull;
+                this[this.tableRPT_HOADON.TTIENColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNGAYBANNull() {
-                return this.IsNull(this.tableRPT_HoaDonBanGas.NGAYBANColumn);
+                return this.IsNull(this.tableRPT_HOADON.NGAYBANColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetNGAYBANNull() {
-                this[this.tableRPT_HoaDonBanGas.NGAYBANColumn] = global::System.Convert.DBNull;
+                this[this.tableRPT_HOADON.NGAYBANColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -854,22 +854,22 @@ namespace _119000808_VoHoangHuy_19CT112 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class RPT_HoaDonBanGasRowChangeEvent : global::System.EventArgs {
+        public class RPT_HOADONRowChangeEvent : global::System.EventArgs {
             
-            private RPT_HoaDonBanGasRow eventRow;
+            private RPT_HOADONRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RPT_HoaDonBanGasRowChangeEvent(RPT_HoaDonBanGasRow row, global::System.Data.DataRowAction action) {
+            public RPT_HOADONRowChangeEvent(RPT_HOADONRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RPT_HoaDonBanGasRow Row {
+            public RPT_HOADONRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -885,7 +885,7 @@ namespace _119000808_VoHoangHuy_19CT112 {
         }
     }
 }
-namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
+namespace _119000808_VoHoangHuy_19CT112.BanGasDataSetTableAdapters {
     
     
     /// <summary>
@@ -897,7 +897,7 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class RPT_HoaDonBanGasTableAdapter : global::System.ComponentModel.Component {
+    public partial class RPT_HOADONTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -911,7 +911,7 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public RPT_HoaDonBanGasTableAdapter() {
+        public RPT_HOADONTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1008,7 +1008,7 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "RPT_HoaDonBanGas";
+            tableMapping.DataSetTable = "RPT_HOADON";
             tableMapping.ColumnMappings.Add("MSDONHANG", "MSDONHANG");
             tableMapping.ColumnMappings.Add("MSKH", "MSKH");
             tableMapping.ColumnMappings.Add("MSGAS", "MSGAS");
@@ -1034,20 +1034,20 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.RPT_HoaDonBanGas";
+            this._commandCollection[0].CommandText = "dbo.RPT_HOADON";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MSDH", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MSHD", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.RPT_HoaDonBanGasDataTable dataTable, global::System.Nullable<int> MSDH) {
+        public virtual int Fill(BanGasDataSet.RPT_HOADONDataTable dataTable, global::System.Nullable<int> MSHD) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((MSDH.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(MSDH.Value));
+            if ((MSHD.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(MSHD.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -1063,15 +1063,15 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.RPT_HoaDonBanGasDataTable GetData(global::System.Nullable<int> MSDH) {
+        public virtual BanGasDataSet.RPT_HOADONDataTable GetData(global::System.Nullable<int> MSHD) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((MSDH.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(MSDH.Value));
+            if ((MSHD.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(MSHD.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            DataSet1.RPT_HoaDonBanGasDataTable dataTable = new DataSet1.RPT_HoaDonBanGasDataTable();
+            BanGasDataSet.RPT_HOADONDataTable dataTable = new BanGasDataSet.RPT_HOADONDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1145,7 +1145,7 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(BanGasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1155,7 +1155,7 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(BanGasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1165,7 +1165,7 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(BanGasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1199,7 +1199,7 @@ namespace _119000808_VoHoangHuy_19CT112.DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DataSet1 dataSet) {
+        public virtual int UpdateAll(BanGasDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
