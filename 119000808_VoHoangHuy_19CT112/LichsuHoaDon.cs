@@ -111,11 +111,35 @@ namespace _119000808_VoHoangHuy_19CT112
             txt_sdtKH.Text = "";
             txt_DC.Text = "";
             txt_tongtien.Text = "";
+            txt_ngay.Text = "";
+            txt_nam.Text = "";
+            txt_thang.Text = "";
         }
 
         private void btn_dong_Click(object sender, EventArgs e)
         {
             DongTap();
+        }
+
+        private void btn_locdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Runnow();
+                string s = "Select *  From HoaDon Where (NGAYBAN>=" + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.00" + "'"
+                    +" )and "+ "(NGAYBAN <= " + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 23:59:59.999" + "'"
+                    + " )";
+                SqlCommand cmd = new SqlCommand(s, cnn);
+                da.SelectCommand = cmd;
+                dt.Clear();
+                da.Fill(dt);
+                bin.DataSource = dt;
+                data_HoaDon.DataSource = bin;
+                cnn.Close();
+            }catch(Exception e2)
+            {
+                cnn.Close();
+            }
         }
     }
 }

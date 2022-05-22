@@ -30,8 +30,6 @@
         {
             this.data_HoaDon = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_clear = new System.Windows.Forms.Button();
-            this.btn_in = new System.Windows.Forms.Button();
             this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_DC = new System.Windows.Forms.TextBox();
@@ -46,7 +44,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_msKH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_ngay = new System.Windows.Forms.TextBox();
+            this.txt_thang = new System.Windows.Forms.TextBox();
+            this.txt_nam = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.btn_dong = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_in = new System.Windows.Forms.Button();
+            this.btn_timdate = new System.Windows.Forms.Button();
+            this.btn_locdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_HoaDon)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,12 +73,20 @@
             this.data_HoaDon.ReadOnly = true;
             this.data_HoaDon.RowHeadersWidth = 51;
             this.data_HoaDon.RowTemplate.Height = 24;
+            this.data_HoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.data_HoaDon.Size = new System.Drawing.Size(1032, 335);
             this.data_HoaDon.TabIndex = 72;
             this.data_HoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_HoaDon_CellClick);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_locdate);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txt_nam);
+            this.panel1.Controls.Add(this.txt_thang);
+            this.panel1.Controls.Add(this.txt_ngay);
             this.panel1.Controls.Add(this.btn_dong);
             this.panel1.Controls.Add(this.btn_clear);
             this.panel1.Controls.Add(this.btn_in);
@@ -94,38 +110,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1032, 314);
             this.panel1.TabIndex = 73;
-            // 
-            // btn_clear
-            // 
-            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
-            this.btn_clear.Location = new System.Drawing.Point(211, 206);
-            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(186, 60);
-            this.btn_clear.TabIndex = 73;
-            this.btn_clear.Text = "Làm Sạch / Mới";
-            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_clear.UseVisualStyleBackColor = true;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // btn_in
-            // 
-            this.btn_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_in.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_in.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.check;
-            this.btn_in.Location = new System.Drawing.Point(53, 206);
-            this.btn_in.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_in.Name = "btn_in";
-            this.btn_in.Size = new System.Drawing.Size(154, 60);
-            this.btn_in.TabIndex = 72;
-            this.btn_in.Text = "In Hóa Đơn";
-            this.btn_in.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_in.UseVisualStyleBackColor = true;
-            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
             // 
             // txt_tongtien
             // 
@@ -281,6 +265,69 @@
             this.label2.TabIndex = 58;
             this.label2.Text = "MS Khách Hàng";
             // 
+            // txt_ngay
+            // 
+            this.txt_ngay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ngay.Location = new System.Drawing.Point(777, 218);
+            this.txt_ngay.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_ngay.Name = "txt_ngay";
+            this.txt_ngay.Size = new System.Drawing.Size(63, 32);
+            this.txt_ngay.TabIndex = 75;
+            // 
+            // txt_thang
+            // 
+            this.txt_thang.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_thang.Location = new System.Drawing.Point(648, 218);
+            this.txt_thang.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_thang.Name = "txt_thang";
+            this.txt_thang.Size = new System.Drawing.Size(63, 32);
+            this.txt_thang.TabIndex = 76;
+            // 
+            // txt_nam
+            // 
+            this.txt_nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nam.Location = new System.Drawing.Point(507, 216);
+            this.txt_nam.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_nam.Name = "txt_nam";
+            this.txt_nam.Size = new System.Drawing.Size(63, 32);
+            this.txt_nam.TabIndex = 77;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(715, 224);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 24);
+            this.label1.TabIndex = 78;
+            this.label1.Text = "Ngày";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label7.Location = new System.Drawing.Point(574, 224);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 24);
+            this.label7.TabIndex = 79;
+            this.label7.Text = "Tháng";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label10.Location = new System.Drawing.Point(450, 222);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 24);
+            this.label10.TabIndex = 80;
+            this.label10.Text = "Năm";
+            // 
             // btn_dong
             // 
             this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -295,6 +342,69 @@
             this.btn_dong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_dong.UseVisualStyleBackColor = true;
             this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
+            this.btn_clear.Location = new System.Drawing.Point(211, 206);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(186, 60);
+            this.btn_clear.TabIndex = 73;
+            this.btn_clear.Text = "Làm Sạch / Mới";
+            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // btn_in
+            // 
+            this.btn_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_in.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_in.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.check;
+            this.btn_in.Location = new System.Drawing.Point(53, 206);
+            this.btn_in.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_in.Name = "btn_in";
+            this.btn_in.Size = new System.Drawing.Size(154, 60);
+            this.btn_in.TabIndex = 72;
+            this.btn_in.Text = "In Hóa Đơn";
+            this.btn_in.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_in.UseVisualStyleBackColor = true;
+            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
+            // 
+            // btn_timdate
+            // 
+            this.btn_timdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_timdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_timdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_timdate.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.ios_photos_40px;
+            this.btn_timdate.Location = new System.Drawing.Point(844, 206);
+            this.btn_timdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_timdate.Name = "btn_timdate";
+            this.btn_timdate.Size = new System.Drawing.Size(154, 60);
+            this.btn_timdate.TabIndex = 81;
+            this.btn_timdate.Text = "Lọc Ngảy";
+            this.btn_timdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_timdate.UseVisualStyleBackColor = true;
+            // 
+            // btn_locdate
+            // 
+            this.btn_locdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_locdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_locdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_locdate.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.ios_photos_40px;
+            this.btn_locdate.Location = new System.Drawing.Point(855, 206);
+            this.btn_locdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_locdate.Name = "btn_locdate";
+            this.btn_locdate.Size = new System.Drawing.Size(154, 60);
+            this.btn_locdate.TabIndex = 82;
+            this.btn_locdate.Text = "Lọc Ngảy";
+            this.btn_locdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_locdate.UseVisualStyleBackColor = true;
+            this.btn_locdate.Click += new System.EventHandler(this.btn_locdate_Click);
             // 
             // LichsuHoaDon
             // 
@@ -335,5 +445,13 @@
         private System.Windows.Forms.Button btn_in;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_dong;
+        private System.Windows.Forms.TextBox txt_ngay;
+        private System.Windows.Forms.TextBox txt_thang;
+        private System.Windows.Forms.TextBox txt_nam;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btn_timdate;
+        private System.Windows.Forms.Button btn_locdate;
     }
 }
