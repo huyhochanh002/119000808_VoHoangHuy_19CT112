@@ -209,7 +209,7 @@
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(149, 60);
             this.btn_clear.TabIndex = 30;
-            this.btn_clear.Text = "Làm Sạch";
+            this.btn_clear.Text = "Làm Mới ";
             this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
@@ -235,6 +235,7 @@
             this.txt_timkiem.Size = new System.Drawing.Size(105, 32);
             this.txt_timkiem.TabIndex = 28;
             this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
+            this.txt_timkiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_timkiem_KeyPress);
             // 
             // btn_delete
             // 

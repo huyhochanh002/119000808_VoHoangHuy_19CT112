@@ -107,7 +107,7 @@ namespace _119000808_VoHoangHuy_19CT112
             }
             catch (Exception e2)
             {
-                MessageBox.Show("Lỗi Khi Mở Tab khách Hàng !");
+                MessageBox.Show("Lỗi Khi Mở Tab Gas !");
             }
         }
 
@@ -136,7 +136,7 @@ namespace _119000808_VoHoangHuy_19CT112
             }
             catch (Exception e2)
             {
-                MessageBox.Show("Lỗi Khi Mở Tab khách Hàng !");
+                MessageBox.Show("Lỗi Khi Mở Tab Nhân Viên !");
             }
         }
 
@@ -165,7 +165,36 @@ namespace _119000808_VoHoangHuy_19CT112
             }
             catch (Exception e2)
             {
-                MessageBox.Show("Lỗi Khi Mở Tab khách Hàng !");
+                MessageBox.Show("Lỗi Khi Mở Tab Bán Hàng!");
+            }
+        }
+
+        private void btn_report_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.trangThai = true;
+                this.tentabmo = "In Hóa Đơn";
+                if (!Kiemtramotab(tentabmo))
+                {
+                    TabItem t = tab_main.CreateTab(tentabmo);
+                    t.Name = "inhoadon";
+
+                    LichsuHoaDon report = new LichsuHoaDon()
+                    {
+                        DongTap = new LichsuHoaDon._dongTap(DongTab),
+                        frm = this,
+                        TopLevel = false,
+                        Dock = DockStyle.Fill,
+                    };
+                    t.AttachedControl.Controls.Add(report);
+                    report.Show();
+                    tab_main.SelectedTabIndex = tab_main.Tabs.Count - 1;
+                }
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show("Lỗi Khi Mở Tab In Hóa Đơn !");
             }
         }
     }

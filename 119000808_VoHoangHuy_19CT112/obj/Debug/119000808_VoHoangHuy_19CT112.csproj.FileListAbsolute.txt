@@ -60,7 +60,6 @@ C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.HoaDon.resources
-C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.Report.resources
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
@@ -81,3 +80,4 @@ C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.LichsuHoaDon.resources

@@ -28,7 +28,6 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void txt_timkiem_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         //// Kết Nối Sql Nè 
@@ -101,6 +100,8 @@ namespace _119000808_VoHoangHuy_19CT112
         private void btn_clear_Click(object sender, EventArgs e)
         {
             clear();
+            dt.Clear();
+            ondataviewKH();
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -187,6 +188,22 @@ namespace _119000808_VoHoangHuy_19CT112
         private void btn_dong_Click(object sender, EventArgs e)
         {
             DongTap();
+        }
+
+        private void txt_timkiem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar==13)
+            {
+                try
+                {
+                    DataView dv = new DataView(dt);
+                    dv.RowFilter = "TENKH like '%" + txt_timkiem.Text + "%'";
+                    data_KhachHang.DataSource = dv;
+                }catch(Exception e2)
+                {
+
+                }
+            }
         }
     }
 }

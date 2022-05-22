@@ -124,8 +124,8 @@ namespace _119000808_VoHoangHuy_19CT112
                 {
                     txt_msKH.Text = Convert.ToString(data_KH.CurrentRow.Cells["MSKH"].Value);
                     txt_tenKH.Text = Convert.ToString(data_KH.CurrentRow.Cells["TENKH"].Value);
-                    txt_DC.Text = Convert.ToString(data_KH.CurrentRow.Cells["SDT"].Value);
-                    txt_sdtKH.Text = Convert.ToString(data_KH.CurrentRow.Cells["DIACHI"].Value);
+                    txt_sdtKH.Text = Convert.ToString(data_KH.CurrentRow.Cells["SDT"].Value);
+                    txt_DC.Text = Convert.ToString(data_KH.CurrentRow.Cells["DIACHI"].Value);
                     solan = Convert.ToInt32(data_KH.CurrentRow.Cells["SLDAMUA"].Value);
                 }
             }
@@ -147,7 +147,7 @@ namespace _119000808_VoHoangHuy_19CT112
             {
             }
         }
-
+        int sltonkho;
         private void data_Loaigas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -156,8 +156,9 @@ namespace _119000808_VoHoangHuy_19CT112
                 {
                     txt_msGAS.Text = Convert.ToString(data_Loaigas.CurrentRow.Cells["MSGAS"].Value);
                     double tt = Convert.ToDouble(data_Loaigas.CurrentRow.Cells["DGGAS"].Value);
-                    double tong = tt * 1000;
+                    double tong = tt * 1000.0;
                     txt_tongtien.Text = tong.ToString();
+                    sltonkho = Convert.ToInt32(data_Loaigas.CurrentRow.Cells["SLTON"].Value);
 
                 }
             }
@@ -209,6 +210,13 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Tạo Hóa Đơn Thành Công");
                 updatesolanmua();
+                updatehangtonkho();
+                dtKH.Clear();
+                dtNV.Clear();
+                dtGAS.Clear();
+                daKH.Fill(dtKH);
+                daNV.Fill(dtNV);
+                daGAS.Fill(dtGAS);
                 clear();
 
             }
@@ -223,9 +231,26 @@ namespace _119000808_VoHoangHuy_19CT112
             try
             {
                 Runnow();
-                string s = "Update KhachHang set SLDAMUA="+(solan+1)+" where MSKH=@MSKH ";
+                string s = "Update KhachHang set SLDAMUA="+(solan + 1)+ " where MSKH=@MSKH ";
                 SqlCommand cmd = new SqlCommand(s, cnn);
                 cmd.Parameters.Add("@MSKH", SqlDbType.Int).Value = int.Parse(txt_msKH.Text);
+                cmd.ExecuteNonQuery();
+                cnn.Close();
+
+            }
+            catch (Exception e2)
+            {
+                cnn.Close();
+            }
+        }
+        public void updatehangtonkho()
+        {
+            try
+            {
+                Runnow();
+                string s = "Update GAS set SLTON=" + (sltonkho - 1) + " where MSGAS=@MSGAS ";
+                SqlCommand cmd = new SqlCommand(s, cnn);
+                cmd.Parameters.Add("@MSGAS", SqlDbType.Int).Value = int.Parse(txt_msGAS.Text);
                 cmd.ExecuteNonQuery();
                 cnn.Close();
 
@@ -238,6 +263,11 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void HoaDon_Leave(object sender, EventArgs e)
         {
+        }
+
+        private void btn_dong_Click(object sender, EventArgs e)
+        {
+            DongTap();
         }
     }
 }

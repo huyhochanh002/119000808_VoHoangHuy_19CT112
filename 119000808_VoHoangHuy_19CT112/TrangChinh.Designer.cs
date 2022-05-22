@@ -32,6 +32,7 @@
             this.tab_main = new DevComponents.DotNetBar.TabControl();
             this.pn_top = new System.Windows.Forms.Panel();
             this.pn_left = new System.Windows.Forms.Panel();
+            this.btn_report = new System.Windows.Forms.Button();
             this.btn_HoaDon = new System.Windows.Forms.Button();
             this.btn_nhanvien = new System.Windows.Forms.Button();
             this.btn_gas = new System.Windows.Forms.Button();
@@ -82,6 +83,7 @@
             // pn_left
             // 
             this.pn_left.BackgroundImage = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.main_back1;
+            this.pn_left.Controls.Add(this.btn_report);
             this.pn_left.Controls.Add(this.btn_HoaDon);
             this.pn_left.Controls.Add(this.btn_nhanvien);
             this.pn_left.Controls.Add(this.btn_gas);
@@ -92,6 +94,25 @@
             this.pn_left.Name = "pn_left";
             this.pn_left.Size = new System.Drawing.Size(293, 720);
             this.pn_left.TabIndex = 0;
+            // 
+            // btn_report
+            // 
+            this.btn_report.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_report.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_report.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_report.FlatAppearance.BorderSize = 3;
+            this.btn_report.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_report.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_report.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_report.Location = new System.Drawing.Point(0, 425);
+            this.btn_report.Name = "btn_report";
+            this.btn_report.Size = new System.Drawing.Size(293, 61);
+            this.btn_report.TabIndex = 6;
+            this.btn_report.Text = "Hóa Đơn";
+            this.btn_report.UseVisualStyleBackColor = false;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
             // 
             // btn_HoaDon
             // 
@@ -207,6 +228,7 @@
         private System.Windows.Forms.Button btn_gas;
         private System.Windows.Forms.Button btn_nhanvien;
         private System.Windows.Forms.Button btn_HoaDon;
+        private System.Windows.Forms.Button btn_report;
     }
 }
 
