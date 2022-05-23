@@ -123,7 +123,7 @@
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(149, 60);
             this.btn_clear.TabIndex = 48;
-            this.btn_clear.Text = "Làm Sạch";
+            this.btn_clear.Text = "Làm Mới";
             this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);

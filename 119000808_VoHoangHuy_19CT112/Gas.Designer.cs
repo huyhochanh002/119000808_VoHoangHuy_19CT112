@@ -31,6 +31,7 @@
             this.pn_main = new System.Windows.Forms.Panel();
             this.data_gas = new System.Windows.Forms.DataGridView();
             this.pn_top = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.btn_dong = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.txt_ton = new System.Windows.Forms.TextBox();
             this.txt_dongia = new System.Windows.Forms.TextBox();
             this.txt_size = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.pn_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_gas)).BeginInit();
             this.pn_top.SuspendLayout();
@@ -100,6 +100,18 @@
             this.pn_top.TabIndex = 0;
             this.pn_top.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_top_Paint);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Magenta;
+            this.label5.Location = new System.Drawing.Point(251, 75);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(172, 24);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Tiền = DG x 1000";
+            // 
             // btn_dong
             // 
             this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -126,7 +138,7 @@
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(149, 60);
             this.btn_clear.TabIndex = 34;
-            this.btn_clear.Text = "Làm Sạch";
+            this.btn_clear.Text = "Làm Mới";
             this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
@@ -263,18 +275,6 @@
             this.txt_size.Name = "txt_size";
             this.txt_size.Size = new System.Drawing.Size(158, 32);
             this.txt_size.TabIndex = 29;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Magenta;
-            this.label5.Location = new System.Drawing.Point(251, 75);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 24);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Tiền = DG x 1000";
             // 
             // Gas
             // 

@@ -160,6 +160,8 @@ namespace _119000808_VoHoangHuy_19CT112
         private void btn_clear_Click(object sender, EventArgs e)
         {
             clear();
+            dt.Clear();
+            ondataviewGAS();
         }
 
         private void btn_delete_Click(object sender, EventArgs e)

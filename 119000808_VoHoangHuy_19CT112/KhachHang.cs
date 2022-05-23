@@ -76,7 +76,10 @@ namespace _119000808_VoHoangHuy_19CT112
             txt_sdt.Text = "";
             txt_diachi.Text = "";
             txt_sldamua.Text = "";
+            txt_timkiem.Text = "";
             btn_them.Enabled = true;
+            dt.Clear();
+            ondataviewKH();
         }
         private void data_KhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -100,8 +103,6 @@ namespace _119000808_VoHoangHuy_19CT112
         private void btn_clear_Click(object sender, EventArgs e)
         {
             clear();
-            dt.Clear();
-            ondataviewKH();
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -120,8 +121,6 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Thêm Thành Công");
                 clear();
-                dt.Clear();
-                da.Fill(dt);
 
             }
             catch (Exception e2)
@@ -148,8 +147,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Đã Sữa Thành Công");
                 clear();
-                dt.Clear();
-                da.Fill(dt);
+
 
             }
             catch (Exception e2)
@@ -173,9 +171,6 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Đã Xóa Thành Công");
                 clear();
-                dt.Clear();
-                da.Fill(dt);
-
             }
             catch (Exception e2)
             {

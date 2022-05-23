@@ -44,6 +44,9 @@ namespace _119000808_VoHoangHuy_19CT112
         BindingSource binKH = new BindingSource();
         BindingSource binGAS = new BindingSource();
         BindingSource binNV = new BindingSource();
+        /// <summary>
+        /// Kết 1nối sqlserver tại đây
+        /// </summary>
         public void Runnow()
         {
             try
@@ -175,12 +178,6 @@ namespace _119000808_VoHoangHuy_19CT112
             txt_msNV.Text = "";
             txt_msGAS.Text = "";
             txt_tongtien.Text = "";
-
-        }
-
-        private void btn_clear_Click(object sender, EventArgs e)
-        {
-            clear();
             dtKH.Clear();
             dtNV.Clear();
             dtGAS.Clear();
@@ -188,6 +185,11 @@ namespace _119000808_VoHoangHuy_19CT112
             daNV.Fill(dtNV);
             daGAS.Fill(dtGAS);
 
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            clear();
         }
 
         private void btn_banhang_Click(object sender, EventArgs e)
@@ -211,12 +213,6 @@ namespace _119000808_VoHoangHuy_19CT112
                 MessageBox.Show("Tạo Hóa Đơn Thành Công");
                 updatesolanmua();
                 updatehangtonkho();
-                dtKH.Clear();
-                dtNV.Clear();
-                dtGAS.Clear();
-                daKH.Fill(dtKH);
-                daNV.Fill(dtNV);
-                daGAS.Fill(dtGAS);
                 clear();
 
             }
