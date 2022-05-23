@@ -66,9 +66,7 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            dt.Clear();
             clear();
-            ondataviewHoaDon();
 
 
         }
@@ -114,6 +112,8 @@ namespace _119000808_VoHoangHuy_19CT112
             txt_ngay.Text = "";
             txt_nam.Text = "";
             txt_thang.Text = "";
+            dt.Clear();
+            ondataviewHoaDon();
         }
 
         private void btn_dong_Click(object sender, EventArgs e)

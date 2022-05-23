@@ -72,6 +72,8 @@ namespace _119000808_VoHoangHuy_19CT112
             txt_size.Text = "";
             txt_ton.Text = "";
             btn_them.Enabled = true;
+            dt.Clear();
+            da.Fill(dt);
         }
         private void btn_them_Click(object sender, EventArgs e)
         {
@@ -88,8 +90,6 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Thêm Thành Công");
                 clear();
-                dt.Clear();
-                da.Fill(dt);
 
             }
             catch (Exception e2)
@@ -126,8 +126,6 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Đã Sữa Thành Công");
                 clear();
-                dt.Clear();
-                da.Fill(dt);
 
             }
             catch (Exception e2)
@@ -176,8 +174,6 @@ namespace _119000808_VoHoangHuy_19CT112
                 cnn.Close();
                 MessageBox.Show("Đã Xóa Thành Công");
                 clear();
-                dt.Clear();
-                da.Fill(dt);
 
             }
             catch (Exception e2)
