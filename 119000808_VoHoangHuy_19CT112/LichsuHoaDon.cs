@@ -131,7 +131,7 @@ namespace _119000808_VoHoangHuy_19CT112
                 if (txt_nam1.Text == "" || txt_ngay1.Text == "" || txt_thang1.Text == "")
                 {
                     Runnow();
-                    string s = "Select *  From HoaDon Where (NGAYBAN>=" + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.00" + "'"
+                    string s = "Select *  From HoaDon Where (NGAYBAN>=" + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.000" + "'"
                         + " )and " + "(NGAYBAN <= " + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 23:59:59.999" + "'"
                         + " )";
                     SqlCommand cmd = new SqlCommand(s, cnn);
@@ -258,11 +258,31 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             try
             {
+                if (txt_nam1.Text == "" || txt_ngay1.Text == "" || txt_thang1.Text == "")
+                {
+                    //2022-05-22 11:08:52.903
+                    String day1 = txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.000";
+                    DateTime ngaybd = Convert.ToDateTime(day1);
+                    String day2 = txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 23:59:59.999";
+                    DateTime ngaykt = Convert.ToDateTime(day2);
+                    BaoCaoTheoNgay bc = new BaoCaoTheoNgay(ngaybd, ngaykt);
+                    bc.ShowDialog();
+                }
+                else
+                {
+                    //2022-05-22 11:08:52.903
+                    String day1 = txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.000";
+                    DateTime ngaybd = Convert.ToDateTime(day1);
+                    String day2 = txt_nam1.Text + "-" + txt_thang1.Text + "-" + txt_ngay1.Text + " 23:59:59.999";
+                    DateTime ngaykt = Convert.ToDateTime(day2);
+                    BaoCaoTheoNgay bc = new BaoCaoTheoNgay(ngaybd, ngaykt);
+                    bc.ShowDialog();
+                }
             }
             catch (Exception e2)
             {
                 MessageBox.Show("Hãy Kiểm Tra Lại Ngày Tháng Nhập !");
             }
         }
-        }
     }
+}
