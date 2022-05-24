@@ -125,20 +125,129 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             try
             {
-                Runnow();
-                string s = "Select *  From HoaDon Where (NGAYBAN>=" + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.00" + "'"
-                    +" )and "+ "(NGAYBAN <= " + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 23:59:59.999" + "'"
-                    + " )";
-                SqlCommand cmd = new SqlCommand(s, cnn);
-                da.SelectCommand = cmd;
-                dt.Clear();
-                da.Fill(dt);
-                bin.DataSource = dt;
-                data_HoaDon.DataSource = bin;
-                cnn.Close();
-            }catch(Exception e2)
+                if (txt_nam1.Text == "" || txt_ngay1.Text == "" || txt_thang1.Text == "")
+                {
+                    Runnow();
+                    string s = "Select *  From HoaDon Where (NGAYBAN>=" + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.00" + "'"
+                        + " )and " + "(NGAYBAN <= " + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 23:59:59.999" + "'"
+                        + " )";
+                    SqlCommand cmd = new SqlCommand(s, cnn);
+                    da.SelectCommand = cmd;
+                    dt.Clear();
+                    da.Fill(dt);
+                    bin.DataSource = dt;
+                    data_HoaDon.DataSource = bin;
+                    cnn.Close();
+                }
+                else
+                {
+                    Runnow();
+                    string s1 = "Select *  From HoaDon Where (NGAYBAN>=" + "'" + txt_nam.Text + "-" + txt_thang.Text + "-" + txt_ngay.Text + " 00:00:00.00" + "'"
+                        + " )and " + "(NGAYBAN <= " + "'" + txt_nam1.Text + "-" + txt_thang1.Text + "-" + txt_ngay1.Text + " 23:59:59.999" + "'"
+                        + " )";
+                    SqlCommand cmd1 = new SqlCommand(s1, cnn);
+                    da.SelectCommand = cmd1;
+                    dt.Clear();
+                    da.Fill(dt);
+                    bin.DataSource = dt;
+                    data_HoaDon.DataSource = bin;
+                    cnn.Close();
+                }
+
+            }
+            catch (Exception e2)
             {
                 cnn.Close();
+            }
+        }
+
+        private void txt_nam_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+    (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_thang_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+    (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_ngay_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+    (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_nam1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+    (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_thang1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+    (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_ngay1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+    (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
             }
         }
     }

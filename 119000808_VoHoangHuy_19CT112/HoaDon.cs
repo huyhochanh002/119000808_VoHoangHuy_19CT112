@@ -219,7 +219,7 @@ namespace _119000808_VoHoangHuy_19CT112
             catch (Exception e2)
             {
                 cnn.Close();
-                MessageBox.Show("Vui Lòng Kiểm Tra Lại Dữ Liệu nhập ! ");
+                MessageBox.Show("Tạo Hóa Đơn Thất Bại ! ");
             }
         }
         public void updatesolanmua()
