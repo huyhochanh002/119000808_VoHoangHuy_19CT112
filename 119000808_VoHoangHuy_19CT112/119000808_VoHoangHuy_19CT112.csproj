@@ -81,6 +81,12 @@
     <Compile Include="BaoCao.Designer.cs">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaoCaoTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoTheoNgay.Designer.cs">
+      <DependentUpon>BaoCaoTheoNgay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <EmbeddedResource Include="BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoTheoNgay.resx">
+      <DependentUpon>BaoCaoTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gas.resx">
       <DependentUpon>Gas.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +148,7 @@
       <DependentUpon>LichsuHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="TrangChinh.resx">
       <DependentUpon>TrangChinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Anh\ios_photos_40px.png" />
+    <None Include="Anh\increase_48px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

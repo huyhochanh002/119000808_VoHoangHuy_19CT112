@@ -103,6 +103,16 @@ namespace _119000808_VoHoangHuy_19CT112.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap increase_48px {
+            get {
+                object obj = ResourceManager.GetObject("increase_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ios_photos_40px {
             get {
                 object obj = ResourceManager.GetObject("ios_photos_40px", resourceCulture);

@@ -112,6 +112,9 @@ namespace _119000808_VoHoangHuy_19CT112
             txt_ngay.Text = "";
             txt_nam.Text = "";
             txt_thang.Text = "";
+            txt_ngay1.Text = "";
+            txt_nam1.Text = "";
+            txt_thang1.Text = "";
             dt.Clear();
             ondataviewHoaDon();
         }
@@ -250,5 +253,16 @@ namespace _119000808_VoHoangHuy_19CT112
                 e.Handled = true;
             }
         }
+
+        private void btn_intoanbotheongay_Click(object sender, EventArgs e)
+        {
+            try
+            {
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show("Hãy Kiểm Tra Lại Ngày Tháng Nhập !");
+            }
+        }
+        }
     }
-}
