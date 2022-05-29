@@ -27,7 +27,8 @@ namespace _119000808_VoHoangHuy_19CT112
         public _dongTap DongTap;
         //// Kết Nối Sql Nè 
         SqlConnection cnn = new SqlConnection();
-        string server = "LAPTOP-MV93PLLT\\SQLEXPRESS";
+        //string server = "LAPTOP-MV93PLLT\\SQLEXPRESS";
+        KhaiBaoChung bc=new KhaiBaoChung();
         //dataapdater dataset
         SqlDataAdapter da = new SqlDataAdapter();
         DataTable dt = new DataTable();
@@ -36,7 +37,7 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             try
             {
-                string s = "Server=" + server + ";database=BanGas;uid=sa;pwd=123456";
+                string s = "Server=" + bc.Server + ";database="+bc.Database+";uid=sa;pwd=123456";
                 cnn.ConnectionString = s;
                 cnn.Open();
             }

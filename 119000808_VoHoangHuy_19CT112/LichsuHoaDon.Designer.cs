@@ -30,6 +30,7 @@
         {
             this.data_HoaDon = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_intoanbotheongay = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -38,12 +39,16 @@
             this.txt_ngay1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.btn_locdate = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_nam = new System.Windows.Forms.TextBox();
             this.txt_thang = new System.Windows.Forms.TextBox();
             this.txt_ngay = new System.Windows.Forms.TextBox();
+            this.btn_dong = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_in = new System.Windows.Forms.Button();
             this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_DC = new System.Windows.Forms.TextBox();
@@ -58,11 +63,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_msKH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_intoanbotheongay = new System.Windows.Forms.Button();
-            this.btn_locdate = new System.Windows.Forms.Button();
-            this.btn_dong = new System.Windows.Forms.Button();
-            this.btn_clear = new System.Windows.Forms.Button();
-            this.btn_in = new System.Windows.Forms.Button();
             this.btn_timdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_HoaDon)).BeginInit();
             this.panel1.SuspendLayout();
@@ -128,6 +128,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1032, 343);
             this.panel1.TabIndex = 73;
+            // 
+            // btn_intoanbotheongay
+            // 
+            this.btn_intoanbotheongay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_intoanbotheongay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_intoanbotheongay.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.btn_intoanbotheongay.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.increase_48px;
+            this.btn_intoanbotheongay.Location = new System.Drawing.Point(534, 281);
+            this.btn_intoanbotheongay.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_intoanbotheongay.Name = "btn_intoanbotheongay";
+            this.btn_intoanbotheongay.Size = new System.Drawing.Size(245, 60);
+            this.btn_intoanbotheongay.TabIndex = 91;
+            this.btn_intoanbotheongay.Text = "In Theo Ngày Tháng";
+            this.btn_intoanbotheongay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_intoanbotheongay.UseVisualStyleBackColor = true;
+            this.btn_intoanbotheongay.Click += new System.EventHandler(this.btn_intoanbotheongay_Click);
             // 
             // label13
             // 
@@ -219,6 +235,22 @@
             this.label11.TabIndex = 83;
             this.label11.Text = "Từ Ngày :";
             // 
+            // btn_locdate
+            // 
+            this.btn_locdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_locdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_locdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_locdate.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.ios_photos_40px;
+            this.btn_locdate.Location = new System.Drawing.Point(406, 206);
+            this.btn_locdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_locdate.Name = "btn_locdate";
+            this.btn_locdate.Size = new System.Drawing.Size(129, 60);
+            this.btn_locdate.TabIndex = 82;
+            this.btn_locdate.Text = "Lọc Ngảy";
+            this.btn_locdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_locdate.UseVisualStyleBackColor = true;
+            this.btn_locdate.Click += new System.EventHandler(this.btn_locdate_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -284,6 +316,53 @@
             this.txt_ngay.Size = new System.Drawing.Size(63, 22);
             this.txt_ngay.TabIndex = 75;
             this.txt_ngay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ngay_KeyPress);
+            // 
+            // btn_dong
+            // 
+            this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dong.ForeColor = System.Drawing.Color.Red;
+            this.btn_dong.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.close_window_48px;
+            this.btn_dong.Location = new System.Drawing.Point(972, 11);
+            this.btn_dong.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_dong.Name = "btn_dong";
+            this.btn_dong.Size = new System.Drawing.Size(37, 34);
+            this.btn_dong.TabIndex = 74;
+            this.btn_dong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
+            this.btn_clear.Location = new System.Drawing.Point(211, 206);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(186, 60);
+            this.btn_clear.TabIndex = 73;
+            this.btn_clear.Text = "Làm Sạch / Mới";
+            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // btn_in
+            // 
+            this.btn_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_in.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_in.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.check;
+            this.btn_in.Location = new System.Drawing.Point(53, 206);
+            this.btn_in.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_in.Name = "btn_in";
+            this.btn_in.Size = new System.Drawing.Size(154, 60);
+            this.btn_in.TabIndex = 72;
+            this.btn_in.Text = "In Hóa Đơn";
+            this.btn_in.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_in.UseVisualStyleBackColor = true;
+            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
             // 
             // txt_tongtien
             // 
@@ -438,85 +517,6 @@
             this.label2.Size = new System.Drawing.Size(161, 24);
             this.label2.TabIndex = 58;
             this.label2.Text = "MS Khách Hàng";
-            // 
-            // btn_intoanbotheongay
-            // 
-            this.btn_intoanbotheongay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_intoanbotheongay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_intoanbotheongay.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.btn_intoanbotheongay.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.increase_48px;
-            this.btn_intoanbotheongay.Location = new System.Drawing.Point(534, 281);
-            this.btn_intoanbotheongay.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_intoanbotheongay.Name = "btn_intoanbotheongay";
-            this.btn_intoanbotheongay.Size = new System.Drawing.Size(245, 60);
-            this.btn_intoanbotheongay.TabIndex = 91;
-            this.btn_intoanbotheongay.Text = "In Theo Ngày Tháng";
-            this.btn_intoanbotheongay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_intoanbotheongay.UseVisualStyleBackColor = true;
-            this.btn_intoanbotheongay.Click += new System.EventHandler(this.btn_intoanbotheongay_Click);
-            // 
-            // btn_locdate
-            // 
-            this.btn_locdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_locdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_locdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_locdate.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.ios_photos_40px;
-            this.btn_locdate.Location = new System.Drawing.Point(406, 206);
-            this.btn_locdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_locdate.Name = "btn_locdate";
-            this.btn_locdate.Size = new System.Drawing.Size(129, 60);
-            this.btn_locdate.TabIndex = 82;
-            this.btn_locdate.Text = "Lọc Ngảy";
-            this.btn_locdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_locdate.UseVisualStyleBackColor = true;
-            this.btn_locdate.Click += new System.EventHandler(this.btn_locdate_Click);
-            // 
-            // btn_dong
-            // 
-            this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dong.ForeColor = System.Drawing.Color.Red;
-            this.btn_dong.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.close_window_48px;
-            this.btn_dong.Location = new System.Drawing.Point(972, 11);
-            this.btn_dong.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_dong.Name = "btn_dong";
-            this.btn_dong.Size = new System.Drawing.Size(37, 34);
-            this.btn_dong.TabIndex = 74;
-            this.btn_dong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_dong.UseVisualStyleBackColor = true;
-            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
-            // 
-            // btn_clear
-            // 
-            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
-            this.btn_clear.Location = new System.Drawing.Point(211, 206);
-            this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(186, 60);
-            this.btn_clear.TabIndex = 73;
-            this.btn_clear.Text = "Làm Sạch / Mới";
-            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_clear.UseVisualStyleBackColor = true;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // btn_in
-            // 
-            this.btn_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_in.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_in.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.check;
-            this.btn_in.Location = new System.Drawing.Point(53, 206);
-            this.btn_in.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_in.Name = "btn_in";
-            this.btn_in.Size = new System.Drawing.Size(154, 60);
-            this.btn_in.TabIndex = 72;
-            this.btn_in.Text = "In Hóa Đơn";
-            this.btn_in.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_in.UseVisualStyleBackColor = true;
-            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
             // 
             // btn_timdate
             // 

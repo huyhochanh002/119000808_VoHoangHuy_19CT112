@@ -83,3 +83,4 @@ C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.LichsuHoaDon.resources
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.BaoCao.resources
 C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.BaoCaoTheoNgay.resources
+C:\Users\huydz\source\repos\huyhochanh002\119000808_VoHoangHuy_19CT112\119000808_VoHoangHuy_19CT112\obj\Debug\_119000808_VoHoangHuy_19CT112.LichsuKhachHang.resources

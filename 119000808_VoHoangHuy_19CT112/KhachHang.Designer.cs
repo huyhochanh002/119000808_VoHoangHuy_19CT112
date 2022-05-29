@@ -47,6 +47,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.data_KhachHang = new System.Windows.Forms.DataGridView();
+            this.btn_lichsu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_KhachHang)).BeginInit();
             this.SuspendLayout();
@@ -160,6 +161,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_lichsu);
             this.panel1.Controls.Add(this.btn_dong);
             this.panel1.Controls.Add(this.btn_clear);
             this.panel1.Controls.Add(this.label6);
@@ -204,7 +206,7 @@
             this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_clear.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.user_40px1;
-            this.btn_clear.Location = new System.Drawing.Point(566, 157);
+            this.btn_clear.Location = new System.Drawing.Point(518, 157);
             this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(149, 60);
@@ -219,7 +221,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(758, 175);
+            this.label6.Location = new System.Drawing.Point(688, 175);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 24);
@@ -229,10 +231,10 @@
             // txt_timkiem
             // 
             this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_timkiem.Location = new System.Drawing.Point(860, 169);
+            this.txt_timkiem.Location = new System.Drawing.Point(790, 169);
             this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.Size = new System.Drawing.Size(105, 32);
+            this.txt_timkiem.Size = new System.Drawing.Size(206, 32);
             this.txt_timkiem.TabIndex = 28;
             this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
             this.txt_timkiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_timkiem_KeyPress);
@@ -243,7 +245,7 @@
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.Color.Red;
             this.btn_delete.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.bitten_apple_50px;
-            this.btn_delete.Location = new System.Drawing.Point(401, 157);
+            this.btn_delete.Location = new System.Drawing.Point(365, 157);
             this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(149, 60);
@@ -259,7 +261,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.button1.Image = global::_119000808_VoHoangHuy_19CT112.Properties.Resources.check;
-            this.button1.Location = new System.Drawing.Point(232, 157);
+            this.button1.Location = new System.Drawing.Point(207, 157);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 60);
@@ -302,6 +304,21 @@
             this.data_KhachHang.TabIndex = 29;
             this.data_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_KhachHang_CellClick);
             // 
+            // btn_lichsu
+            // 
+            this.btn_lichsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_lichsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_lichsu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_lichsu.Location = new System.Drawing.Point(740, 87);
+            this.btn_lichsu.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_lichsu.Name = "btn_lichsu";
+            this.btn_lichsu.Size = new System.Drawing.Size(178, 32);
+            this.btn_lichsu.TabIndex = 32;
+            this.btn_lichsu.Text = "Lịch Sử Mua Hàng";
+            this.btn_lichsu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_lichsu.UseVisualStyleBackColor = true;
+            this.btn_lichsu.Click += new System.EventHandler(this.btn_lichsu_Click);
+            // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,5 +360,6 @@
         private System.Windows.Forms.DataGridView data_KhachHang;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_dong;
+        private System.Windows.Forms.Button btn_lichsu;
     }
 }

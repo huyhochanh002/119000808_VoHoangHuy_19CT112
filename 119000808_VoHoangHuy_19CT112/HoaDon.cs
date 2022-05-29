@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,7 +34,8 @@ namespace _119000808_VoHoangHuy_19CT112
             ondataviewNhanVien();
         }
         SqlConnection cnn = new SqlConnection();
-        string server = "LAPTOP-MV93PLLT\\SQLEXPRESS";
+        //string server = "LAPTOP-MV93PLLT\\SQLEXPRESS";
+        KhaiBaoChung bc = new KhaiBaoChung();
         //dataapdater dataset
         SqlDataAdapter daKH = new SqlDataAdapter();
         SqlDataAdapter daGAS = new SqlDataAdapter();
@@ -51,7 +53,7 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             try
             {
-                string s = "Server=" + server + ";database=BanGas;uid=sa;pwd=123456";
+                string s = "Server=" + bc.Server + ";database=" + bc.Database + ";uid=sa;pwd=123456";
                 cnn.ConnectionString = s;
                 cnn.Open();
             }
