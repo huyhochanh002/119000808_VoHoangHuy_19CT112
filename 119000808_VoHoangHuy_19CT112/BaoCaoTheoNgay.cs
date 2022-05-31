@@ -23,9 +23,16 @@ namespace _119000808_VoHoangHuy_19CT112
 
         private void BaoCaoTheoNgay_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'banGasDataSet.RPT_HOADONTHEONGAY' table. You can move, or remove it, as needed.
-            this.rPT_HOADONTHEONGAYTableAdapter.Fill(this.banGasDataSet.RPT_HOADONTHEONGAY,_ngaybd,_ngaykt);
-
+            try
+            {            // TODO: This line of code loads data into the 'banGasDataSet.tongtientheongay' table. You can move, or remove it, as needed.
+                this.tongtientheongayTableAdapter.Fill(this.banGasDataSet.tongtientheongay, _ngaybd, _ngaykt);
+                // TODO: This line of code loads data into the 'banGasDataSet.RPT_HOADONTHEONGAY' table. You can move, or remove it, as needed.
+                this.rPT_HOADONTHEONGAYTableAdapter.Fill(this.banGasDataSet.RPT_HOADONTHEONGAY, _ngaybd, _ngaykt);
+            }
+            catch(Exception e2)
+            {
+                MessageBox.Show("Có Lỗi Vui Lòng Kiểm tra Lại TableApdater");
+            }
             this.reportViewer1.RefreshReport();
         }
     }

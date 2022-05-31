@@ -2,14 +2,15 @@
 <xs:schema id="BanGasDataSet" targetNamespace="http://tempuri.org/BanGasDataSet.xsd" xmlns:mstns="http://tempuri.org/BanGasDataSet.xsd" xmlns="http://tempuri.org/BanGasDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BanGasConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BanGasConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings._119000808_VoHoangHuy_19CT112.Properties.Settings.GlobalReference.Default.BanGasConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_19CT112_VOHOANGHUY_119000808ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_19CT112_VOHOANGHUY_119000808ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings._119000808_VoHoangHuy_19CT112.Properties.Settings.GlobalReference.Default._19CT112_VOHOANGHUY_119000808ConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RPT_HOADONTableAdapter" GeneratorDataComponentClassName="RPT_HOADONTableAdapter" Name="RPT_HOADON" UserDataComponentName="RPT_HOADONTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="BanGasConnectionString (Settings)" DbObjectName="BanGas.dbo.RPT_HOADON" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="_19CT112_VOHOANGHUY_119000808ConnectionString (Settings)" DbObjectName="[19CT112_VOHOANGHUY_119000808].dbo.RPT_HOADON" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.RPT_HOADON</CommandText>
@@ -36,7 +37,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RPT_HOADONTHEONGAYTableAdapter" GeneratorDataComponentClassName="RPT_HOADONTHEONGAYTableAdapter" Name="RPT_HOADONTHEONGAY" UserDataComponentName="RPT_HOADONTHEONGAYTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="BanGasConnectionString (Settings)" DbObjectName="BanGas.dbo.RPT_HOADONTHEONGAY" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="_19CT112_VOHOANGHUY_119000808ConnectionString (Settings)" DbObjectName="[19CT112_VOHOANGHUY_119000808].dbo.RPT_HOADONTHEONGAY" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.RPT_HOADONTHEONGAY</CommandText>
@@ -62,6 +63,26 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tongtientheongayTableAdapter" GeneratorDataComponentClassName="tongtientheongayTableAdapter" Name="tongtientheongay" UserDataComponentName="tongtientheongayTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_19CT112_VOHOANGHUY_119000808ConnectionString (Settings)" DbObjectName="[19CT112_VOHOANGHUY_119000808].dbo.tongtientheongay" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.tongtientheongay</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@d1" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@d2" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TongTien" DataSetColumn="TongTien" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -70,30 +91,30 @@
   <xs:element name="BanGasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BanGasDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BanGasDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="RPT_HOADON" msprop:Generator_RowEvHandlerName="RPT_HOADONRowChangeEventHandler" msprop:Generator_RowDeletedName="RPT_HOADONRowDeleted" msprop:Generator_RowDeletingName="RPT_HOADONRowDeleting" msprop:Generator_RowEvArgName="RPT_HOADONRowChangeEvent" msprop:Generator_TablePropName="RPT_HOADON" msprop:Generator_RowChangedName="RPT_HOADONRowChanged" msprop:Generator_UserTableName="RPT_HOADON" msprop:Generator_RowChangingName="RPT_HOADONRowChanging" msprop:Generator_RowClassName="RPT_HOADONRow" msprop:Generator_TableClassName="RPT_HOADONDataTable" msprop:Generator_TableVarName="tableRPT_HOADON">
+        <xs:element name="RPT_HOADON" msprop:Generator_RowEvHandlerName="RPT_HOADONRowChangeEventHandler" msprop:Generator_RowDeletedName="RPT_HOADONRowDeleted" msprop:Generator_RowDeletingName="RPT_HOADONRowDeleting" msprop:Generator_RowEvArgName="RPT_HOADONRowChangeEvent" msprop:Generator_TablePropName="RPT_HOADON" msprop:Generator_RowChangedName="RPT_HOADONRowChanged" msprop:Generator_RowChangingName="RPT_HOADONRowChanging" msprop:Generator_TableClassName="RPT_HOADONDataTable" msprop:Generator_RowClassName="RPT_HOADONRow" msprop:Generator_TableVarName="tableRPT_HOADON" msprop:Generator_UserTableName="RPT_HOADON">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="MSDONHANG" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="MSDONHANGColumn" msprop:Generator_ColumnPropNameInRow="MSDONHANG" msprop:Generator_UserColumnName="MSDONHANG" msprop:Generator_ColumnVarNameInTable="columnMSDONHANG" type="xs:int" />
-              <xs:element name="MSKH" msprop:Generator_ColumnPropNameInTable="MSKHColumn" msprop:Generator_ColumnPropNameInRow="MSKH" msprop:Generator_UserColumnName="MSKH" msprop:Generator_ColumnVarNameInTable="columnMSKH" type="xs:int" />
-              <xs:element name="MSGAS" msprop:Generator_ColumnPropNameInTable="MSGASColumn" msprop:Generator_ColumnPropNameInRow="MSGAS" msprop:Generator_UserColumnName="MSGAS" msprop:Generator_ColumnVarNameInTable="columnMSGAS" type="xs:int" />
-              <xs:element name="MSNV" msprop:Generator_ColumnPropNameInTable="MSNVColumn" msprop:Generator_ColumnPropNameInRow="MSNV" msprop:Generator_UserColumnName="MSNV" msprop:Generator_ColumnVarNameInTable="columnMSNV" type="xs:int" />
-              <xs:element name="TENKH" msprop:Generator_ColumnPropNameInTable="TENKHColumn" msprop:Generator_ColumnPropNameInRow="TENKH" msprop:Generator_UserColumnName="TENKH" msprop:Generator_ColumnVarNameInTable="columnTENKH" minOccurs="0">
+              <xs:element name="MSDONHANG" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="MSDONHANG" msprop:Generator_ColumnPropNameInTable="MSDONHANGColumn" msprop:Generator_ColumnVarNameInTable="columnMSDONHANG" msprop:Generator_UserColumnName="MSDONHANG" type="xs:int" />
+              <xs:element name="MSKH" msprop:Generator_ColumnPropNameInRow="MSKH" msprop:Generator_ColumnPropNameInTable="MSKHColumn" msprop:Generator_ColumnVarNameInTable="columnMSKH" msprop:Generator_UserColumnName="MSKH" type="xs:int" />
+              <xs:element name="MSGAS" msprop:Generator_ColumnPropNameInRow="MSGAS" msprop:Generator_ColumnPropNameInTable="MSGASColumn" msprop:Generator_ColumnVarNameInTable="columnMSGAS" msprop:Generator_UserColumnName="MSGAS" type="xs:int" />
+              <xs:element name="MSNV" msprop:Generator_ColumnPropNameInRow="MSNV" msprop:Generator_ColumnPropNameInTable="MSNVColumn" msprop:Generator_ColumnVarNameInTable="columnMSNV" msprop:Generator_UserColumnName="MSNV" type="xs:int" />
+              <xs:element name="TENKH" msprop:Generator_ColumnPropNameInRow="TENKH" msprop:Generator_ColumnPropNameInTable="TENKHColumn" msprop:Generator_ColumnVarNameInTable="columnTENKH" msprop:Generator_UserColumnName="TENKH" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="SDTKH" msprop:Generator_ColumnPropNameInTable="SDTKHColumn" msprop:Generator_ColumnPropNameInRow="SDTKH" msprop:Generator_UserColumnName="SDTKH" msprop:Generator_ColumnVarNameInTable="columnSDTKH" type="xs:int" minOccurs="0" />
-              <xs:element name="DIACHI" msprop:Generator_ColumnPropNameInTable="DIACHIColumn" msprop:Generator_ColumnPropNameInRow="DIACHI" msprop:Generator_UserColumnName="DIACHI" msprop:Generator_ColumnVarNameInTable="columnDIACHI" minOccurs="0">
+              <xs:element name="SDTKH" msprop:Generator_ColumnPropNameInRow="SDTKH" msprop:Generator_ColumnPropNameInTable="SDTKHColumn" msprop:Generator_ColumnVarNameInTable="columnSDTKH" msprop:Generator_UserColumnName="SDTKH" type="xs:int" minOccurs="0" />
+              <xs:element name="DIACHI" msprop:Generator_ColumnPropNameInRow="DIACHI" msprop:Generator_ColumnPropNameInTable="DIACHIColumn" msprop:Generator_ColumnVarNameInTable="columnDIACHI" msprop:Generator_UserColumnName="DIACHI" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="TTIEN" msprop:Generator_ColumnPropNameInTable="TTIENColumn" msprop:Generator_ColumnPropNameInRow="TTIEN" msprop:Generator_UserColumnName="TTIEN" msprop:Generator_ColumnVarNameInTable="columnTTIEN" type="xs:double" minOccurs="0" />
-              <xs:element name="NGAYBAN" msprop:Generator_ColumnPropNameInTable="NGAYBANColumn" msprop:Generator_ColumnPropNameInRow="NGAYBAN" msprop:Generator_UserColumnName="NGAYBAN" msprop:Generator_ColumnVarNameInTable="columnNGAYBAN" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TTIEN" msprop:Generator_ColumnPropNameInRow="TTIEN" msprop:Generator_ColumnPropNameInTable="TTIENColumn" msprop:Generator_ColumnVarNameInTable="columnTTIEN" msprop:Generator_UserColumnName="TTIEN" type="xs:double" minOccurs="0" />
+              <xs:element name="NGAYBAN" msprop:Generator_ColumnPropNameInRow="NGAYBAN" msprop:Generator_ColumnPropNameInTable="NGAYBANColumn" msprop:Generator_ColumnVarNameInTable="columnNGAYBAN" msprop:Generator_UserColumnName="NGAYBAN" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -121,6 +142,13 @@
               </xs:element>
               <xs:element name="TTIEN" msprop:Generator_ColumnPropNameInRow="TTIEN" msprop:Generator_ColumnPropNameInTable="TTIENColumn" msprop:Generator_ColumnVarNameInTable="columnTTIEN" msprop:Generator_UserColumnName="TTIEN" type="xs:double" minOccurs="0" />
               <xs:element name="NGAYBAN" msprop:Generator_ColumnPropNameInRow="NGAYBAN" msprop:Generator_ColumnPropNameInTable="NGAYBANColumn" msprop:Generator_ColumnVarNameInTable="columnNGAYBAN" msprop:Generator_UserColumnName="NGAYBAN" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tongtientheongay" msprop:Generator_RowEvHandlerName="tongtientheongayRowChangeEventHandler" msprop:Generator_RowDeletedName="tongtientheongayRowDeleted" msprop:Generator_RowDeletingName="tongtientheongayRowDeleting" msprop:Generator_RowEvArgName="tongtientheongayRowChangeEvent" msprop:Generator_TablePropName="tongtientheongay" msprop:Generator_RowChangedName="tongtientheongayRowChanged" msprop:Generator_RowChangingName="tongtientheongayRowChanging" msprop:Generator_TableClassName="tongtientheongayDataTable" msprop:Generator_RowClassName="tongtientheongayRow" msprop:Generator_TableVarName="tabletongtientheongay" msprop:Generator_UserTableName="tongtientheongay">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TongTien" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TongTien" msprop:Generator_ColumnPropNameInTable="TongTienColumn" msprop:Generator_ColumnVarNameInTable="columnTongTien" msprop:Generator_UserColumnName="TongTien" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

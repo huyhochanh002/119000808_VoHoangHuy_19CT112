@@ -33,5 +33,16 @@ namespace _119000808_VoHoangHuy_19CT112.Properties {
                 return ((string)(this["BanGasConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-MV93PLLT\\SQLEXPRESS;Initial Catalog=19CT112_VOHOANGHUY_1190008" +
+            "08;Integrated Security=True")]
+        public string _19CT112_VOHOANGHUY_119000808ConnectionString {
+            get {
+                return ((string)(this["_19CT112_VOHOANGHUY_119000808ConnectionString"]));
+            }
+        }
     }
 }

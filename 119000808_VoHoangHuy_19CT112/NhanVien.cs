@@ -36,7 +36,7 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             try
             {
-                string s = "Server=" + bc.Server + ";database=" + bc.Database + ";uid=sa;pwd=123456";
+                string s = bc.NguyenChuoi1;/*"Server=" + bc.Server + ";database=" + bc.Database + ";uid=" + bc.Uid + ";pwd=" + bc.Pwd;*/
                 cnn.ConnectionString = s;
                 cnn.Open();
             }

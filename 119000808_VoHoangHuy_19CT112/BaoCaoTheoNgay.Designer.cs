@@ -30,14 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.RPT_HOADONTHEONGAYBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.banGasDataSet = new _119000808_VoHoangHuy_19CT112.BanGasDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.rPTHOADONTHEONGAYBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rPT_HOADONTHEONGAYTableAdapter = new _119000808_VoHoangHuy_19CT112.BanGasDataSetTableAdapters.RPT_HOADONTHEONGAYTableAdapter();
+            this.tongtientheongayBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tongtientheongayTableAdapter = new _119000808_VoHoangHuy_19CT112.BanGasDataSetTableAdapters.tongtientheongayTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.RPT_HOADONTHEONGAYBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.banGasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPTHOADONTHEONGAYBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tongtientheongayBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // RPT_HOADONTHEONGAYBindingSource
@@ -55,7 +59,10 @@
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.RPT_HOADONTHEONGAYBindingSource;
+            reportDataSource2.Name = "DataSet2";
+            reportDataSource2.Value = this.tongtientheongayBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "_119000808_VoHoangHuy_19CT112.Report2.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -72,6 +79,15 @@
             // 
             this.rPT_HOADONTHEONGAYTableAdapter.ClearBeforeFill = true;
             // 
+            // tongtientheongayBindingSource
+            // 
+            this.tongtientheongayBindingSource.DataMember = "tongtientheongay";
+            this.tongtientheongayBindingSource.DataSource = this.banGasDataSet;
+            // 
+            // tongtientheongayTableAdapter
+            // 
+            this.tongtientheongayTableAdapter.ClearBeforeFill = true;
+            // 
             // BaoCaoTheoNgay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -87,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.RPT_HOADONTHEONGAYBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.banGasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPTHOADONTHEONGAYBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tongtientheongayBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,5 +115,7 @@
         private BanGasDataSet banGasDataSet;
         private System.Windows.Forms.BindingSource rPTHOADONTHEONGAYBindingSource;
         private BanGasDataSetTableAdapters.RPT_HOADONTHEONGAYTableAdapter rPT_HOADONTHEONGAYTableAdapter;
+        private System.Windows.Forms.BindingSource tongtientheongayBindingSource;
+        private BanGasDataSetTableAdapters.tongtientheongayTableAdapter tongtientheongayTableAdapter;
     }
 }

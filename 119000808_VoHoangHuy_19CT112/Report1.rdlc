@@ -660,7 +660,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>1.36333in</Top>
         <Height>0.5in</Height>
-        <Width>10.94793in</Width>
+        <Width>10.9479in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -874,6 +874,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>

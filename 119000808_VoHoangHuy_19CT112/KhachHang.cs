@@ -42,7 +42,7 @@ namespace _119000808_VoHoangHuy_19CT112
         {
             try
             {
-                string s = "Server=" + khaibao.Server + ";database="+khaibao.Database+";uid=sa;pwd=123456";
+                string s = khaibao.NguyenChuoi1; /*"Server=" + khaibao.Server + ";database="+khaibao.Database+";uid="+khaibao.Uid+";pwd="+khaibao.Pwd;*/
                 cnn.ConnectionString = s;
                 cnn.Open();
             }

@@ -21,8 +21,15 @@ namespace _119000808_VoHoangHuy_19CT112
         
         private void BaoCao_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'banGasDataSet.RPT_HOADON' table. You can move, or remove it, as needed.
-            this.rPT_HOADONTableAdapter.Fill(this.banGasDataSet.RPT_HOADON,layso);
+            try
+            {            // TODO: This line of code loads data into the 'banGasDataSet.RPT_HOADON' table. You can move, or remove it, as needed.
+                this.rPT_HOADONTableAdapter.Fill(this.banGasDataSet.RPT_HOADON, layso);
+            }
+            catch(Exception e2)
+            {
+
+            }
+
 
         }
 
